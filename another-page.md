@@ -7,8 +7,8 @@ title: Contact
 
 Heeft u vragen over de VBBSKW of wilt u lid worden? Neem gerust contact met ons op.
 
-<div class="contact-grid">
-  <div class="contact-info">
+<div class="contact-grid" markdown="1">
+  <div class="contact-info" markdown="1">
 
 ### Contactgegevens
 
@@ -36,7 +36,7 @@ Stuur een e-mail naar <a href="mailto:voorzitter@vbbskw.com">voorzitter@vbbskw.c
 
   </div>
 
-  <div class="map-container">
+  <div class="map-container" markdown="1">
 
 ### Locatie
 
