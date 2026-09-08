@@ -44,8 +44,8 @@ Naast het burgerberaad bespreken we ook het burgerinitiatief en het uitdaagrecht
 
 ### Meld je aan voor een bijeenkomst
 
-Interesse om aan te sluiten bij een informatiebijeenkomst of workshop? <a class="cta-inline" href="https://www.vbbskw.com/contact.html">Neem contact op</a>
+Interesse om aan te sluiten bij een informatiebijeenkomst of workshop? <a class="cta-inline" href="./another-page.html">Neem contact op</a>
 
 ### Blijf op de hoogte
 
-Bekijk onze [contactgegevens](./another-page.html), of volg de ontwikkelingen via [VBBSKW](https://www.vbbskw.com).
+Lees meer over het kleroterion-principe op de [projectpagina](https://www.vbbskw.com/kleroterion.html) van VBBSKW, of volg de ontwikkelingen via [VBBSKW](https://www.vbbskw.com).
