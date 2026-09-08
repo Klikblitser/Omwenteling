@@ -2,14 +2,10 @@
 ---
 
 @import "{{ site.theme }}";
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap');
 
 /* ============================================================
-   Sobere stijl-override voor Omwenteling
-   Gebaseerd op de opmaak van www.vbbskw.com
-   (overschrijft de standaard blauwe/speelse Architect-opmaak
-   hierboven geïmporteerd; laat de structuur en functies van
-   het thema verder intact — alleen kleur, typografie en
-   witruimte zijn aangepast)
+   Basisstijl voor Omwenteling (sober fundament)
    ============================================================ */
 
 body {
@@ -25,7 +21,6 @@ body {
   max-width: 760px;
 }
 
-/* Kopblok: geen kleurvlak, geen decoratief lettertype meer */
 header {
   background: #ffffff;
   border-bottom: 1px solid #e2e2e2;
@@ -35,9 +30,9 @@ header {
 
 header h1 {
   width: auto;
-  font-family: inherit;
-  font-size: 2.4em;
-  font-weight: 600;
+  font-family: 'Fredoka', inherit;
+  font-weight: 700;
+  font-size: 2.6em;
   color: #1a1a1a;
   letter-spacing: normal;
 }
@@ -50,24 +45,9 @@ header h2 {
   color: #555555;
 }
 
-header a.button {
-  position: static;
-  display: inline-block;
-  width: auto;
-  height: auto;
-  padding: 6px 14px;
-  margin-top: 1rem;
-  background: none;
-  font-family: inherit;
-  font-size: 0.85em;
-  color: #1a4d8f;
-  border: 1px solid #1a4d8f;
-  border-radius: 3px;
-}
-
 #content-wrapper {
   border-top: none;
-  padding-top: 2.5rem;
+  padding-top: 0;
 }
 
 #main-content {
@@ -75,43 +55,16 @@ header a.button {
   width: 100%;
 }
 
-/* Zijbalk (GitHub-koppeling / downloads) blijft functioneel
-   aanwezig, maar zonder de achtergrondafbeelding en felgekleurde
-   knoppen — sobere tekstlinks in plaats daarvan */
-aside#sidebar {
-  float: none;
-  width: 100%;
-  min-height: 0;
-  padding: 1.5rem 0 0;
-  margin-top: 2.5rem;
-  font-size: 0.85em;
-  color: #666666;
-  background: none;
-  border-top: 1px solid #eeeeee;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fredoka', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
-aside a.button {
-  display: inline-block;
-  width: auto;
-  padding: 4px 10px;
-  margin: 0 8px 8px 0;
-  background: none;
-  border: 1px solid #cccccc;
-  border-radius: 3px;
-  font-family: inherit;
-  font-size: 0.85em;
-  color: #444444;
-}
-
-/* Koppen in de inhoud: geen schuine "//"-decoratie meer,
-   rustige hiërarchie zoals op vbbskw.com */
 #main-content h1,
 #main-content h2,
 #main-content h3,
 #main-content h4,
 #main-content h5,
 #main-content h6 {
-  font-family: inherit;
   color: #1a1a1a;
   text-indent: 0;
 }
@@ -139,4 +92,87 @@ a:hover {
 footer {
   color: #999999;
   border-top: 1px solid #eeeeee;
+}
+
+/* ============================================================
+   Speelse, schuine secties voor de homepage
+   ============================================================ */
+
+.block {
+  position: relative;
+  left: 50%;
+  width: 100vw;
+  margin-left: -50vw;
+  padding: 5rem 1.5rem 7rem;
+  overflow: hidden;
+}
+
+.block-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.block-inner.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.block-inner h2 {
+  font-size: 2em;
+  margin-bottom: 0.75rem;
+}
+
+.block-inner h2::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  background: #1a4d8f;
+  transform: rotate(45deg);
+}
+
+.block-a {
+  background: #fef6e4;
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+}
+
+.block-b {
+  background: #e8f1ff;
+  margin-top: -4rem;
+  clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 92%);
+}
+
+.block-c {
+  background: #ffeef0;
+  margin-top: -4rem;
+  padding-bottom: 6rem;
+  clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
+}
+
+/* Knop met hover-effect, gebruikt in de 'Doe mee'-sectie */
+.cta {
+  display: inline-block;
+  padding: 10px 22px;
+  margin-top: 0.75rem;
+  background: #1a4d8f;
+  color: #ffffff !important;
+  border-radius: 4px;
+  border-bottom: none !important;
+  font-weight: 600;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.cta:hover {
+  background: #123a6b;
+  transform: translateY(-2px);
+}
+
+@media only screen and (max-width: 600px) {
+  .block {
+    padding: 3.5rem 1.25rem 5rem;
+  }
 }
