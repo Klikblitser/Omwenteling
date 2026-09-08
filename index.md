@@ -48,4 +48,4 @@ Interesse om aan te sluiten bij een informatiebijeenkomst of workshop? <a class=
 
 ### Blijf op de hoogte
 
-Lees meer over de achtergrond van dit project op [de projectpagina](./another-page.md), of volg de ontwikkelingen via [VBBSKW](https://www.vbbskw.com).
+Bekijk onze [contactgegevens](./another-page.html), of volg de ontwikkelingen via [VBBSKW](https://www.vbbskw.com).

@@ -171,3 +171,55 @@ footer {
   header .title { font-size: 2.2em; }
   .ribbon-inner { flex-direction: column; align-items: flex-start; }
 }
+
+/* Contactpagina */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.75rem;
+  margin: 2rem 0;
+}
+
+@media only screen and (max-width: 700px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-info,
+.map-container {
+  background: #ffffff;
+  border: 1px solid #cfe0da;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.contact-item {
+  margin: 1rem 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.contact-item span {
+  font-size: 1.2em;
+}
+
+#map {
+  height: 320px;
+  border-radius: 8px;
+  border: 1px solid #cfe0da;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+#map:hover {
+  filter: grayscale(30%);
+}
+
+.privacy-note {
+  font-size: 0.85em;
+  color: #6b7a76;
+  margin-top: 0.75rem;
+  font-style: italic;
+}
