@@ -2,28 +2,88 @@
 layout: default
 ---
 
-Van burgerberaad tot gemeenschapssoevereiniteit — herstel van zeggenschap begint bij vertrouwen dat je zelf kunt verifiëren.
+<section class="block block-a">
+  <div class="block-inner">
 
-### Inhoud
+## Wat is een burgerberaad?
 
-1. [Wat is Omwenteling](#wat-is-omwenteling)
-2. [Waarom loting](#waarom-loting)
-3. [Waar we nu staan](#waar-we-nu-staan)
-4. [Doe mee](#doe-mee)
+Een burgerberaad is een groep inwoners, geloot uit de hele gemeente, die zich samen verdiept in een vraagstuk en het lokale bestuur adviseert. Geen verkiezingscampagne, geen partijbelang — een dwarsdoorsnede van de gemeenschap zelf aan tafel.
 
-### 1. Wat is Omwenteling {#wat-is-omwenteling}
+### Loting naast verkiezingen
 
-Omwenteling is het burgerberaad-initiatief van [VBBSKW](https://www.vbbskw.com), gericht op het terugbrengen van gemeenschapssoevereiniteit: het vermogen van burgers om gefundeerd — niet cynisch — wantrouwen om te zetten in aantoonbare invloed op het lokale bestuur.
+Verkiezingen belonen zichtbaarheid; loting — het [kleroterion](https://www.vbbskw.com/kleroterion.html)-principe — voegt daar een tweede vorm van legitimiteit aan toe, gebaseerd op representatie in plaats van populariteit.
 
-### 2. Waarom loting {#waarom-loting}
+### Waarom dit in Velsen gebeurt
 
-Verkiezingen belonen zichtbaarheid, niet per se inzicht. Een geloot en representatief samengesteld burgerberaad — het [kleroterion](https://www.vbbskw.com/kleroterion.html)-principe — voegt daar een tweede, aanvullende vorm van legitimiteit aan toe: een dwarsdoorsnede van de gemeenschap zelf aan tafel.
+Via Stichting De Omwenteling, onderdeel van [VBBSKW](https://www.vbbskw.com), bouwen we in Velsen aan een burgerberaad met een eigen mandaatstructuur en statutair fundament. De achtergrond staat beschreven in [Van burgerschap tot staatsmanschap](https://www.vbbskw.com/van-burgerschap-tot-staatsmanschap.html).
 
-### 3. Waar we nu staan {#waar-we-nu-staan}
+  </div>
+</section>
 
-In Velsen bouwen we, via Stichting De Omwenteling, aan een burgerberaad met een eigen mandaatstructuur en statutair fundament. De achtergrond en onderliggende theorie staan beschreven in [Van burgerschap tot staatsmanschap](https://www.vbbskw.com/van-burgerschap-tot-staatsmanschap.html).
+<section class="block block-b">
+  <div class="block-inner">
 
-### 4. Doe mee {#doe-mee}
+## Informatiebijeenkomsten &amp; workshops
 
-Benieuwd wat een burgerberaad in jouw gemeente kan betekenen, of wil je meedenken?
-[Neem contact op](https://www.vbbskw.com/contact.html) of lees [meer over dit project](./another-page.md).
+**Iedereen is welkom** — of je nu alles al weet over deliberatieve democratie of er nog nooit van gehoord hebt. Er is geen voorkennis nodig om aan te sluiten.
+
+### Voor wie
+
+Bewoners van Velsen en omstreken, nieuwsgierigen, twijfelaars, en iedereen die zich weleens heeft afgevraagd of het ook anders kan dan alleen via de stembus.
+
+### Wat je leert
+
+#### Hoe werkt loting?
+
+We laten stap voor stap zien hoe een geloot en representatief samengesteld burgerberaad wordt samengesteld, en waarom dat anders werkt dan een enquête of inspraakavond.
+
+##### Het kleroterion-principe
+
+De naam komt van het oude Atheense loting-apparaat: een mechanisme dat willekeur combineert met eerlijke, controleerbare representatie — geen black box, maar een navolgbaar proces.
+
+#### Deliberatieve democratie in de praktijk
+
+Aan de hand van voorbeelden zoals het burgerberaad in Oost-België (Ostbelgien) en de Connecticut Citizens' Assembly laten we zien hoe beraadslaging in de praktijk tot gedragen besluiten leidt.
+
+#### Andere participatiemiddelen
+
+Naast het burgerberaad bespreken we ook het burgerinitiatief en het uitdaagrecht — bestaande instrumenten in de Velsense verordeningen waar je vandaag al gebruik van kunt maken.
+
+  </div>
+</section>
+
+<section class="block block-c">
+  <div class="block-inner">
+
+## Doe mee
+
+### Meld je aan voor een bijeenkomst
+
+Interesse om aan te sluiten bij een informatiebijeenkomst of workshop?
+<a class="cta" href="https://www.vbbskw.com/contact.html">Neem contact op</a>
+
+### Blijf op de hoogte
+
+Lees meer over de achtergrond van dit project op [de projectpagina](./another-page.md), of volg de ontwikkelingen via [VBBSKW](https://www.vbbskw.com).
+
+  </div>
+</section>
+
+<script>
+(function () {
+  var blocks = document.querySelectorAll('.block-inner');
+  if (!('IntersectionObserver' in window)) {
+    blocks.forEach(function (el) { el.classList.add('is-visible'); });
+    return;
+  }
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  blocks.forEach(function (el) { observer.observe(el); });
+})();
+</script>
