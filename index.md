@@ -2,9 +2,6 @@
 layout: default
 ---
 
-<section class="block block-a">
-  <div class="block-inner">
-
 ## Wat is een burgerberaad?
 
 Een burgerberaad is een groep inwoners, geloot uit de hele gemeente, die zich samen verdiept in een vraagstuk en het lokale bestuur adviseert. Geen verkiezingscampagne, geen partijbelang — een dwarsdoorsnede van de gemeenschap zelf aan tafel.
@@ -17,13 +14,7 @@ Verkiezingen belonen zichtbaarheid; loting — het [kleroterion](https://www.vbb
 
 Via Stichting De Omwenteling, onderdeel van [VBBSKW](https://www.vbbskw.com), bouwen we in Velsen aan een burgerberaad met een eigen mandaatstructuur en statutair fundament. De achtergrond staat beschreven in [Van burgerschap tot staatsmanschap](https://www.vbbskw.com/van-burgerschap-tot-staatsmanschap.html).
 
-  </div>
-</section>
-
-<section class="block block-b">
-  <div class="block-inner">
-
-## Informatiebijeenkomsten &amp; workshops
+## Informatiebijeenkomsten & workshops
 
 **Iedereen is welkom** — of je nu alles al weet over deliberatieve democratie of er nog nooit van gehoord hebt. Er is geen voorkennis nodig om aan te sluiten.
 
@@ -49,41 +40,12 @@ Aan de hand van voorbeelden zoals het burgerberaad in Oost-België (Ostbelgien) 
 
 Naast het burgerberaad bespreken we ook het burgerinitiatief en het uitdaagrecht — bestaande instrumenten in de Velsense verordeningen waar je vandaag al gebruik van kunt maken.
 
-  </div>
-</section>
-
-<section class="block block-c">
-  <div class="block-inner">
-
 ## Doe mee
 
 ### Meld je aan voor een bijeenkomst
 
-Interesse om aan te sluiten bij een informatiebijeenkomst of workshop?
-<a class="cta" href="https://www.vbbskw.com/contact.html">Neem contact op</a>
+Interesse om aan te sluiten bij een informatiebijeenkomst of workshop? <a class="cta-inline" href="https://www.vbbskw.com/contact.html">Neem contact op</a>
 
 ### Blijf op de hoogte
 
 Lees meer over de achtergrond van dit project op [de projectpagina](./another-page.md), of volg de ontwikkelingen via [VBBSKW](https://www.vbbskw.com).
-
-  </div>
-</section>
-
-<script>
-(function () {
-  var blocks = document.querySelectorAll('.block-inner');
-  if (!('IntersectionObserver' in window)) {
-    blocks.forEach(function (el) { el.classList.add('is-visible'); });
-    return;
-  }
-  var observer = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.15 });
-  blocks.forEach(function (el) { observer.observe(el); });
-})();
-</script>

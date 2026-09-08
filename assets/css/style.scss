@@ -1,178 +1,173 @@
 ---
 ---
 
-@import "{{ site.theme }}";
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,600&family=Inter:wght@400;600&display=swap');
 
-/* ============================================================
-   Basisstijl voor Omwenteling (sober fundament)
-   ============================================================ */
+* { box-sizing: border-box; }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-size: 17px;
   line-height: 1.65;
-  color: #1a1a1a;
-  background: #ffffff;
-}
-
-.inner {
-  width: 100%;
-  max-width: 760px;
-}
-
-header {
-  background: #ffffff;
-  border-bottom: 1px solid #e2e2e2;
-  padding-top: 3rem;
-  padding-bottom: 2rem;
-}
-
-header h1 {
-  width: auto;
-  font-family: 'Fredoka', inherit;
-  font-weight: 700;
-  font-size: 2.6em;
-  color: #1a1a1a;
-  letter-spacing: normal;
-}
-
-header h2 {
-  width: auto;
-  font-family: inherit;
-  font-size: 1.15em;
-  font-weight: 400;
-  color: #555555;
-}
-
-#content-wrapper {
-  border-top: none;
-  padding-top: 0;
-}
-
-#main-content {
-  float: none;
-  width: 100%;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Fredoka', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-}
-
-#main-content h1,
-#main-content h2,
-#main-content h3,
-#main-content h4,
-#main-content h5,
-#main-content h6 {
-  color: #1a1a1a;
-  text-indent: 0;
-}
-
-#main-content h1::before,
-#main-content h2::before,
-#main-content h3::before,
-h4::before,
-h5::before,
-h6::before {
-  content: none;
+  color: #1c2b28;
+  background: #faf9f6;
 }
 
 a {
-  color: #1a4d8f;
+  color: #1f6f5c;
   text-decoration: none;
-  border-bottom: 1px solid rgba(26, 77, 143, 0.35);
+  transition: color 0.2s ease;
 }
 
 a:hover {
-  color: #123a6b;
-  border-bottom-color: #123a6b;
+  color: #123f34;
+  text-decoration: underline;
+}
+
+/* Bovenste mobilisatie-ribbon, vervangt de oude download-bar */
+.ribbon {
+  background: #16211f;
+  color: #faf9f6;
+  padding: 0.75rem 1.5rem;
+}
+
+.ribbon-inner {
+  max-width: 880px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.ribbon-text {
+  font-weight: 600;
+}
+
+.ribbon .cta {
+  display: inline-block;
+  padding: 8px 18px;
+  background: #e8b33d;
+  color: #16211f !important;
+  border-radius: 4px;
+  font-weight: 700;
+  text-decoration: none !important;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.ribbon .cta:hover {
+  background: #f4c86a;
+  transform: translateY(-1px);
+}
+
+/* Header met speelse, cursieve titel */
+header {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem 2.5rem;
+  text-align: center;
+}
+
+header .title {
+  margin: 0 0 0.5rem;
+  font-family: 'Fraunces', Georgia, serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 3em;
+  color: #16211f;
+}
+
+header .tagline {
+  margin: 0;
+  font-size: 1.15em;
+  color: #3d4d49;
+}
+
+#main {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+}
+
+.markdown-body h2 {
+  font-size: 1.8em;
+  margin-top: 2.5rem;
+  padding-top: 0.5rem;
+  border-top: 3px solid #1f6f5c;
+  color: #16211f;
+}
+
+.markdown-body h3 {
+  font-size: 1.3em;
+  color: #16211f;
+}
+
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  color: #1f6f5c;
+}
+
+.markdown-body strong {
+  color: #16211f;
+}
+
+.cta-inline {
+  display: inline-block;
+  padding: 6px 16px;
+  margin-left: 0.5rem;
+  background: #1f6f5c;
+  color: #ffffff !important;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+.cta-inline:hover {
+  background: #123f34;
+  text-decoration: none !important;
 }
 
 footer {
-  color: #999999;
-  border-top: 1px solid #eeeeee;
+  text-align: center;
+  padding: 2rem 1.5rem 4rem;
+  color: #6b7a76;
+  font-size: 0.9em;
 }
 
-/* ============================================================
-   Speelse, schuine secties voor de homepage
-   ============================================================ */
-
-.block {
-  position: relative;
-  left: 50%;
-  width: 100vw;
-  margin-left: -50vw;
-  padding: 5rem 1.5rem 7rem;
-  overflow: hidden;
-}
-
-.block-inner {
-  max-width: 760px;
-  margin: 0 auto;
+/* De "waar ben ik"-balk die tijdens het scrollen verschijnt,
+   aangestuurd door assets/js/script.js (ongewijzigd overgenomen
+   uit het Time Machine-thema) */
+.current-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #16211f;
+  color: #faf9f6;
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  padding: 0.75rem 1.5rem;
+  z-index: 10;
 }
 
-.block-inner.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.block-inner h2 {
-  font-size: 2em;
-  margin-bottom: 0.75rem;
-}
-
-.block-inner h2::before {
-  content: "";
+.current-section .name {
   display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin-right: 10px;
-  background: #1a4d8f;
-  transform: rotate(45deg);
-}
-
-.block-a {
-  background: #fef6e4;
-  clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
-}
-
-.block-b {
-  background: #e8f1ff;
-  margin-top: -4rem;
-  clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 92%);
-}
-
-.block-c {
-  background: #ffeef0;
-  margin-top: -4rem;
-  padding-bottom: 6rem;
-  clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
-}
-
-/* Knop met hover-effect, gebruikt in de 'Doe mee'-sectie */
-.cta {
-  display: inline-block;
-  padding: 10px 22px;
-  margin-top: 0.75rem;
-  background: #1a4d8f;
-  color: #ffffff !important;
-  border-radius: 4px;
-  border-bottom: none !important;
+  margin: 0;
   font-weight: 600;
-  transition: transform 0.2s ease, background 0.2s ease;
+  max-width: 700px;
 }
 
-.cta:hover {
-  background: #123a6b;
-  transform: translateY(-2px);
+.current-section a {
+  float: right;
+  color: #e8b33d !important;
+  font-weight: 600;
 }
 
 @media only screen and (max-width: 600px) {
-  .block {
-    padding: 3.5rem 1.25rem 5rem;
-  }
+  header .title { font-size: 2.2em; }
+  .ribbon-inner { flex-direction: column; align-items: flex-start; }
 }
