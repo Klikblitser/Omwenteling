@@ -77,6 +77,13 @@ header .title {
   font-weight: 600;
   font-size: 3em;
   color: #16211f;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.8s ease;
+}
+
+header .title:hover {
+  transform: rotate(360deg);
 }
 
 header .tagline {
