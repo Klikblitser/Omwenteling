@@ -1,5 +1,11 @@
 title: De Omwenteling
 description: Leer tijdens onze informatiebijeenkomsten en workshops hoe burgerberaden en andere participatiemiddelen werken, iedereen is welkom!
 
-# Permalink-structuur voor nieuwsberichten uit _posts
-permalink: /nieuws/:year/:month/:day/:title/
+# Permalink-structuur voor nieuwsberichten uit _posts.
+# Let op: dit hoort onder collections/posts, niet als losse top-level
+# "permalink:"-sleutel — die laatste verandert namelijk ook de URL-stijl
+# van gewone pagina's (zoals another-page.html en nieuws.html werden
+# dan /another-page/ en /nieuws/, wat de site brak).
+collections:
+  posts:
+    permalink: /nieuws/:year/:month/:day/:title/
