@@ -1,6 +1,6 @@
 ---
 
-layout: default
+layout: post
 
 title: "In de bres voor ons recht"
 
