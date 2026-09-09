@@ -48,4 +48,4 @@ Interesse om aan te sluiten bij een informatiebijeenkomst of workshop? <a class=
 
 ### Blijf op de hoogte
 
-Lees meer over het [betoog voor de filosofie achter ons initiatief](http://www.omwenteling.com/omwenteling-demo.html) of over het loting-principe op de [projectpagina](https://www.vbbskw.com/kleroterion.html) van VBBSKW, of volg de ontwikkelingen via [VBBSKW](https://www.vbbskw.com).
+Lees meer over het [de filosofie achter ons initiatief](http://www.omwenteling.com/omwenteling-demo.html) of over het loting-principe op de [projectpagina](https://www.vbbskw.com/kleroterion.html) van VBBSKW, of volg de ontwikkelingen via [VBBSKW](https://www.vbbskw.com).
