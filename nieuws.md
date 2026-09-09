@@ -17,3 +17,5 @@ title: Nieuws
   <a class="nieuws-lees-meer" href="{{ post.url | relative_url }}">Lees verder →</a>
 </div>
 {% endfor %}
+
+[⬅️ Terug naar de hoofdpagina](./)
