@@ -12,7 +12,7 @@ Verkiezingen belonen zichtbaarheid; met [loting](https://www.vbbskw.com/kleroter
 
 ### Waarom dit in Velsen gebeurt
 
-Via Stichting De Omwenteling bouwen we in Velsen aan een burgerberaad met een eigen mandaatstructuur en statutair fundament. De achtergrond staat beschreven in het [**betoog voor de filosofie achter ons initiatief**](http://www.omwenteling.com/omwenteling-demo.html).
+Via Stichting De Omwenteling bouwen we in Velsen aan een burgerberaad met een eigen mandaatstructuur en statutair fundament. De achtergrond staat beschreven in het [betoog voor de filosofie achter ons initiatief](http://www.omwenteling.com/omwenteling-demo.html).
 
 ## Informatiebijeenkomsten & workshops
 
@@ -48,4 +48,4 @@ Interesse om aan te sluiten bij een informatiebijeenkomst of workshop? <a class=
 
 ### Blijf op de hoogte
 
-Lees meer over het loting-principe op de [projectpagina](https://www.vbbskw.com/kleroterion.html) van VBBSKW, of volg de ontwikkelingen via [VBBSKW](https://www.vbbskw.com).
+Lees meer over het [betoog voor de filosofie achter ons initiatief](http://www.omwenteling.com/omwenteling-demo.html) of over het loting-principe op de [projectpagina](https://www.vbbskw.com/kleroterion.html) van VBBSKW, of volg de ontwikkelingen via [VBBSKW](https://www.vbbskw.com).
