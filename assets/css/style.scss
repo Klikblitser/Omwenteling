@@ -15,9 +15,16 @@ body {
 }
 
 a {
-  color: #1f6f5c;
-  text-decoration: none;
+  color: #1f6f5c;        // groen behouden
+  font-style: italic;    // schuin
+  font-weight: 700;      // dikgedrukt
+  text-decoration: underline;
   transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #1f6f5c;
+  text-decoration: underline;
 }
 
 a:hover {
