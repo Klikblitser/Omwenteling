@@ -4,10 +4,11 @@ layout: default
 
 {% if site.posts.size > 0 %}
 {% assign laatste = site.posts.first %}
+{% assign laatste_afbeelding = laatste.image | default: laatste.thumbnail %}
 <div class="laatste-nieuws">
-  {% if laatste.image %}
+  {% if laatste_afbeelding %}
   <a href="{{ laatste.url | relative_url }}" class="laatste-nieuws-afbeelding">
-    <img src="{{ laatste.image | relative_url }}" alt="{{ laatste.title }}">
+    <img src="{{ laatste_afbeelding | relative_url }}" alt="{{ laatste.title }}">
   </a>
   {% endif %}
   <div class="laatste-nieuws-tekst">

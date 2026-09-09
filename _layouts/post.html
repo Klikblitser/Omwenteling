@@ -7,8 +7,9 @@ layout: default
     <h2 class="post-title">{{ page.title }}</h2>
   </header>
 
-  {% if page.image %}
-  <img class="post-afbeelding" src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+  {% assign post_afbeelding = page.image | default: page.thumbnail %}
+  {% if post_afbeelding %}
+  <img class="post-afbeelding" src="{{ post_afbeelding | relative_url }}" alt="{{ page.title }}">
   {% endif %}
 
   <div class="post-content">
