@@ -8,11 +8,11 @@ Een burgerberaad is een groep inwoners, geloot uit de hele gemeente, die zich sa
 
 ### Loting naast verkiezingen
 
-Verkiezingen belonen zichtbaarheid; loting — het [kleroterion](https://www.vbbskw.com/kleroterion.html)-principe — voegt daar een tweede vorm van legitimiteit aan toe, gebaseerd op representatie in plaats van populariteit.
+Verkiezingen belonen zichtbaarheid; met [loting](https://www.vbbskw.com/kleroterion.html) voegen we daar een tweede vorm van legitimiteit aan toe, gebaseerd op representatie in plaats van populariteit.
 
 ### Waarom dit in Velsen gebeurt
 
-Via Stichting De Omwenteling, onderdeel van [VBBSKW](https://www.vbbskw.com), bouwen we in Velsen aan een burgerberaad met een eigen mandaatstructuur en statutair fundament. De achtergrond staat beschreven in [Van burgerschap tot staatsmanschap](https://www.vbbskw.com/van-burgerschap-tot-staatsmanschap.html).
+Via Stichting De Omwenteling bouwen we in Velsen aan een burgerberaad met een eigen mandaatstructuur en statutair fundament. De achtergrond staat beschreven in [betoog voor de filosofie achter ons initiatief](http://www.omwenteling.com/omwenteling-demo.html).
 
 ## Informatiebijeenkomsten & workshops
 
@@ -28,17 +28,17 @@ Bewoners van Velsen en omstreken, nieuwsgierigen, twijfelaars, en iedereen die z
 
 We laten stap voor stap zien hoe een geloot en representatief samengesteld burgerberaad wordt samengesteld, en waarom dat anders werkt dan een enquête of inspraakavond.
 
-##### Het kleroterion-principe
+#### Het stratificatie-principe (ook wel gewogen loting genoemd)
 
-De naam komt van het oude Atheense loting-apparaat: een mechanisme dat willekeur combineert met eerlijke, controleerbare representatie — geen black box, maar een navolgbaar proces.
+Het hoofddoel van dit principe is het creëren van een mini-samenleving of een demografische afspiegeling van de betreffende gemeente, provincie of het land.
 
 #### Deliberatieve democratie in de praktijk
 
-Aan de hand van voorbeelden zoals het burgerberaad in Oost-België (Ostbelgien) en de Connecticut Citizens' Assembly laten we zien hoe beraadslaging in de praktijk tot gedragen besluiten leidt.
+Aan de hand van voorbeelden zoals het burgerberaad in Oost-België (Ostbelgien) en de Connecticut Citizens' Assembly laten we zien hoe beraadslaging in de praktijk tot breed gedragen besluiten leidt.
 
 #### Andere participatiemiddelen
 
-Naast het burgerberaad bespreken we ook het burgerinitiatief en het uitdaagrecht — bestaande instrumenten in de Velsense verordeningen waar je vandaag al gebruik van kunt maken.
+Naast het burgerberaad bespreken we ook het burgerinitiatief en het uitdaagrecht — bestaande instrumenten in de Velsense verordeningen waar je nu al gebruik van kunt maken.
 
 ## Doe mee
 
