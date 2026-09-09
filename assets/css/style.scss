@@ -237,3 +237,144 @@ footer {
   margin-top: 0.75rem;
   font-style: italic;
 }
+
+/* Navigatie in de header */
+header .site-nav {
+  margin-top: 1.1rem;
+  font-size: 0.95em;
+}
+
+header .site-nav a {
+  margin: 0 0.6rem;
+  font-weight: 600;
+  color: #1f6f5c;
+}
+
+header .site-nav a:hover {
+  color: #123f34;
+}
+
+/* Nieuwsoverzicht */
+.nieuws-item {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #cfe0da;
+}
+
+.nieuws-item:last-child {
+  border-bottom: none;
+}
+
+.nieuws-datum {
+  margin: 0 0 0.3rem;
+  font-size: 0.85em;
+  color: #6b7a76;
+}
+
+.nieuws-item h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.3em;
+}
+
+.nieuws-item h3 a {
+  color: #16211f;
+}
+
+.nieuws-item h3 a:hover {
+  color: #1f6f5c;
+  text-decoration: none;
+}
+
+.nieuws-lees-meer {
+  font-weight: 600;
+}
+
+/* Individueel nieuwsbericht */
+.post-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.post-datum {
+  font-size: 0.9em;
+  color: #6b7a76;
+  margin: 0 0 0.4rem;
+}
+
+.markdown-body .post-header h2.post-title {
+  border-top: none;
+  padding-top: 0;
+  margin: 0;
+  font-size: 1.8em;
+}
+
+.post-terug {
+  margin-top: 3rem;
+}
+
+/* "Laatste nieuws"-blok op de homepage */
+.laatste-nieuws {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #cfe0da;
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin: 0 0 2.5rem;
+}
+
+.laatste-nieuws-afbeelding {
+  flex: 0 0 220px;
+  display: block;
+}
+
+.laatste-nieuws-afbeelding img {
+  display: block;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.laatste-nieuws-tekst {
+  flex: 1 1 260px;
+}
+
+.laatste-nieuws-label {
+  margin: 0 0 0.3rem;
+  font-family: Arial, sans-serif;
+  font-size: 0.75em;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #e8b33d;
+  font-weight: 700;
+}
+
+.laatste-nieuws-tekst h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.3em;
+}
+
+.laatste-nieuws-tekst h3 a {
+  color: #16211f;
+}
+
+.laatste-nieuws-tekst h3 a:hover {
+  color: #1f6f5c;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .laatste-nieuws-afbeelding { flex-basis: 100%; }
+}
+
+/* Afbeelding bovenaan een individueel nieuwsbericht */
+.post-afbeelding {
+  display: block;
+  width: 100%;
+  max-height: 360px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}

@@ -1,2 +1,5 @@
 title: De Omwenteling
 description: Leer tijdens onze informatiebijeenkomsten en workshops hoe burgerberaden en andere participatiemiddelen werken, iedereen is welkom!
+
+# Permalink-structuur voor nieuwsberichten uit _posts
+permalink: /nieuws/:year/:month/:day/:title/

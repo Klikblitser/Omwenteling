@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header">
+    <p class="post-datum">{{ page.date | date: "%d-%m-%Y" }}</p>
+    <h2 class="post-title">{{ page.title }}</h2>
+  </header>
+
+  {% if page.image %}
+  <img class="post-afbeelding" src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+  {% endif %}
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <p class="post-terug"><a href="{{ '/nieuws.html' | relative_url }}">← Terug naar het nieuwsoverzicht</a></p>
+</article>

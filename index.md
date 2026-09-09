@@ -2,6 +2,23 @@
 layout: default
 ---
 
+{% if site.posts.size > 0 %}
+{% assign laatste = site.posts.first %}
+<div class="laatste-nieuws">
+  {% if laatste.image %}
+  <a href="{{ laatste.url | relative_url }}" class="laatste-nieuws-afbeelding">
+    <img src="{{ laatste.image | relative_url }}" alt="{{ laatste.title }}">
+  </a>
+  {% endif %}
+  <div class="laatste-nieuws-tekst">
+    <p class="laatste-nieuws-label">Laatste nieuws</p>
+    <h3><a href="{{ laatste.url | relative_url }}">{{ laatste.title }}</a></h3>
+    <p>{{ laatste.excerpt | strip_html | truncatewords: 30 }}</p>
+    <a class="cta-inline" href="{{ laatste.url | relative_url }}">Lees verder</a>
+  </div>
+</div>
+{% endif %}
+
 ## Wat is een burgerberaad?
 
 Een burgerberaad is een groep inwoners, geloot uit de hele gemeente, die zich samen verdiept in een vraagstuk en het lokale bestuur adviseert. Geen verkiezingscampagne, geen partijbelang — een dwarsdoorsnede van de gemeenschap zelf aan tafel.
