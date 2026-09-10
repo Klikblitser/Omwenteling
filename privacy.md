@@ -2,7 +2,6 @@
 
 layout: default
 title: Privacybeleid Stichting De Omwenteling
----
 
 \---
 
