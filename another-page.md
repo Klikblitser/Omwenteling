@@ -5,7 +5,7 @@ title: Contact
 
 ## Contact
 
-Heeft u vragen over de VBBSKW of wilt u lid worden? Neem gerust contact met ons op.
+Heeft u vragen over de Stichting De Omwenteling of wilt jij je aansluiten? Neem gerust contact met ons op.
 
 <div class="contact-grid" markdown="1">
   <div class="contact-info" markdown="1">
@@ -32,7 +32,7 @@ Heeft u vragen over de VBBSKW of wilt u lid worden? Neem gerust contact met ons 
 
 ### Lid worden?
 
-Stuur een e-mail naar <a href="mailto:voorzitter@vbbskw.com">voorzitter@vbbskw.com</a> met uw lidmaatschapsaanvraag. U ontvangt dan de statuten en het inschrijfformulier.
+Stuur een e-mail naar <a href="mailto:voorzitter@vbbskw.com">voorzitter@vbbskw.com</a>, dan ontvang je de statuten en het inschrijfformulier.
 
   </div>
 
