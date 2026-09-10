@@ -1,10 +1,8 @@
 \---
 
 layout: default
-title: Privacybeleid
+title: Privacybeleid Stichting De Omwenteling
 ---
-
-## Privacybeleid Stichting De Omwenteling
 
 \---
 
