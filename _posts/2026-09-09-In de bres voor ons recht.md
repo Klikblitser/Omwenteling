@@ -6,7 +6,7 @@ title: "In de bres voor ons recht"
 
 date: 2026-01-06
 
-thumbnail: /assets/images/Protest.jpeg
+thumbnail: /assets/images/Protest.jpeg	
 
 ---
 
