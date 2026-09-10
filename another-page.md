@@ -42,7 +42,7 @@ Stuur een e-mail naar <a href="mailto:voorzitter@vbbskw.com">voorzitter@vbbskw.c
 
 <div id="map"></div>
 
-<p class="privacy-note">Deze kaart wordt geladen via OpenStreetMap. Hierbij wordt uw IP-adres gedeeld met OpenStreetMap servers. <a href="https://www.vbbskw.com/privacy">Meer info</a></p>
+<p class="privacy-note">Deze kaart wordt geladen via OpenStreetMap. Hierbij wordt uw IP-adres gedeeld met OpenStreetMap servers. <a href="https://www.omwenteling.com/privacy">Meer info</a></p>
 
   </div>
 </div>
