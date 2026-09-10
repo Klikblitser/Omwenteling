@@ -8,7 +8,7 @@ title: Privacybeleid Stichting De Omwenteling
 
 
 
-<p class="date">Laatst bijgewerkt: maart 2026</p>
+<p class="date">Laatst bijgewerkt: September 2026</p>
 
 Stichting De Omwenteling hecht grote waarde aan de bescherming van uw privacy. Dit privacybeleid legt uit hoe wij omgaan met informatie bij het bezoeken van onze website www.omwenteling.com.
 
