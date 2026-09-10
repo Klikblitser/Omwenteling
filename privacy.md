@@ -42,11 +42,11 @@ Wanneer u contact met ons opneemt via e-mail (<a href="mailto:voorzitter@vbbskw.
 * De inhoud van uw bericht
 * Eventuele andere gegevens die u zelf verstrekt
 
-Deze gegevens gebruiken wij uitsluitend om uw vraag te beantwoorden of uw lidmaatschapsaanvraag te verwerken. Wij delen deze gegevens niet met derden en bewaren ze niet langer dan noodzakelijk.
+Deze gegevens gebruiken wij uitsluitend om uw vraag te beantwoorden of uw inschrijving te verwerken. Wij delen deze gegevens niet met derden en bewaren ze niet langer dan noodzakelijk.
 
-### 5\. Lidmaatschap
+### 5\. Associatie
 
-Indien u lid wordt van de VBBSKW, verwerken wij de gegevens die u op het inschrijfformulier verstrekt. Deze gegevens worden uitsluitend gebruikt voor de ledenadministratie en communicatie met leden. Als lid heeft u recht op inzage, correctie en verwijdering van uw gegevens.
+Indien u zich wil associeren met Stichting De Omwenteling, verwerken wij de gegevens die u op het inschrijfformulier verstrekt. Deze gegevens worden uitsluitend gebruikt voor de administratie en communicatie met bestuursleden en gecommitteerden. Als geassocieerde heeft u recht op inzage, correctie en verwijdering van uw gegevens.
 
 ### 6\. Uw rechten
 
