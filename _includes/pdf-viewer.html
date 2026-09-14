@@ -1,0 +1,8 @@
+{%- assign pdf = include.file | relative_url -%}
+<figure class="pdf-embed">
+  <object data="{{ pdf }}#view=FitH" type="application/pdf"
+          aria-label="{{ include.title }}"></object>
+  <figcaption>
+    <a href="{{ pdf }}" download>↓ {{ include.title }} (PDF{% if include.size %}, {{ include.size }}{% endif %})</a>
+  </figcaption>
+</figure>
