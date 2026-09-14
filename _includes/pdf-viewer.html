@@ -1,8 +1,42 @@
+{%- comment -%}
+  Toont een PDF rechtstreeks in de pagina, op elk apparaat.
+
+  Gebruik:
+    {% include pdf-viewer.html
+       file="/assets/documenten/handvest-stichting-de-omwenteling.pdf"
+       title="Handvest Stichting de Omwenteling"
+       size="1,6 MB" %}
+
+  De weergave gebeurt met pdf.js (assets/js/pdf-embed.js), dat de pagina's
+  zelf op een canvas tekent. Een <object>- of <iframe>-insluiting werkt niet
+  op mobiel: Chrome en Firefox op Android en alle browsers op iOS weigeren
+  een PDF inline te tonen en bieden alleen een download aan.
+{%- endcomment -%}
+
 {%- assign pdf = include.file | relative_url -%}
-<figure class="pdf-embed">
-  <object data="{{ pdf }}#view=FitH" type="application/pdf"
-          aria-label="{{ include.title }}"></object>
-  <figcaption>
-    <a href="{{ pdf }}" download>↓ {{ include.title }} (PDF{% if include.size %}, {{ include.size }}{% endif %})</a>
+
+{%- unless pdf_embed_assets_loaded -%}
+  {%- assign pdf_embed_assets_loaded = true -%}
+  <link rel="stylesheet" href="{{ '/assets/css/pdf-embed.css' | relative_url }}">
+  <script type="module" src="{{ '/assets/js/pdf-embed.js' | relative_url }}"></script>
+{%- endunless -%}
+
+<figure class="pdf-embed" data-pdf="{{ pdf }}">
+  <p class="pdf-embed__status" hidden></p>
+
+  <noscript>
+    <p class="pdf-embed__status pdf-embed__status--error">
+      Dit document wordt in de pagina getoond met JavaScript. Staat dat uit,
+      gebruik dan de downloadlink hieronder.
+    </p>
+  </noscript>
+
+  <figcaption class="pdf-embed__foot">
+    <span>{{ include.title }}</span>
+    <span>
+      <a class="pdf-embed__download" href="{{ pdf }}" download>&darr; Downloaden</a>
+      (PDF{% if include.size %}, {{ include.size }}{% endif %}) &middot;
+      <a href="{{ pdf }}" target="_blank" rel="noopener">openen in een nieuw tabblad</a>
+    </span>
   </figcaption>
 </figure>
