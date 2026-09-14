@@ -1,0 +1,159 @@
+/*
+ * pdf-embed.css — opmaak voor de ingebedde PDF-weergave (assets/js/pdf-embed.js).
+ * Plat CSS, geen Jekyll-verwerking: dit bestand wordt letterlijk gekopieerd.
+ */
+
+.pdf-embed {
+  margin: 2rem 0;
+}
+
+.pdf-embed__pages {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pdf-embed__page {
+  position: relative;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #cfe0da;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(22, 33, 31, 0.06);
+}
+
+.pdf-embed__canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.pdf-embed__status {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  color: #6b7a76;
+  font-style: italic;
+}
+
+.pdf-embed__status--error {
+  color: #16211f;
+  font-style: normal;
+  background: #fdf6e3;
+  border-left: 4px solid #e8b33d;
+  padding: 0.75rem 1rem;
+  border-radius: 0 4px 4px 0;
+}
+
+.pdf-embed__foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  margin-top: 0.85rem;
+  font-size: 0.9rem;
+  color: #6b7a76;
+}
+
+.pdf-embed__download {
+  font-weight: 600;
+}
+
+/* Wanneer JavaScript uit staat of het renderen mislukt, blijft alleen
+   de downloadlink over — die moet dan wel opvallen. */
+.pdf-embed--failed .pdf-embed__pages {
+  display: none;
+}
+
+@media print {
+  .pdf-embed__page {
+    border: none;
+    box-shadow: none;
+    break-inside: avoid;
+  }
+  .pdf-embed__foot {
+    display: none;
+  }
+}
+
+/* ------------------------------------------------------------------ *
+ * Tekstlaag van pdf.js: onzichtbare spans exact over het canvas, zodat
+ * tekst selecteerbaar blijft, met Ctrl+F vindbaar is en door schermlezers
+ * wordt voorgelezen. Overgenomen uit pdf_viewer.css (Apache-2.0) en
+ * ontdaan van geneste CSS, zodat ook oudere mobiele browsers het snappen.
+ * ------------------------------------------------------------------ */
+
+.pdf-embed .textLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* pdf.js zet de breedte/hoogte van de tekstlaag met een CSS round()-functie
+     die deze twee variabelen nodig heeft. Ontbreken ze, dan wordt de laag
+     0 px breed en vallen alle tekstregels tegen de linkerrand — de tekst
+     staat er dan wel, maar niet meer boven de juiste woorden. */
+  --scale-round-x: 1px;
+  --scale-round-y: 1px;
+  --user-unit: 1;
+  text-align: initial;
+  overflow: clip;
+  opacity: 1;
+  line-height: 1;
+  letter-spacing: normal;
+  word-spacing: normal;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
+  forced-color-adjust: none;
+  transform-origin: 0 0;
+  caret-color: CanvasText;
+  z-index: 0;
+  --min-font-size: 1;
+  --scale-factor: 1;
+  --total-scale-factor: calc(var(--scale-factor) * var(--user-unit));
+  --text-scale-factor: calc(var(--total-scale-factor) * var(--min-font-size));
+  --min-font-size-inv: calc(1 / var(--min-font-size));
+}
+
+.pdf-embed .textLayer span,
+.pdf-embed .textLayer br {
+  color: transparent;
+  position: absolute;
+  white-space: pre;
+  cursor: text;
+  transform-origin: 0% 0%;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text;
+}
+
+.pdf-embed .textLayer > :not(.markedContent),
+.pdf-embed .textLayer .markedContent span:not(.markedContent) {
+  z-index: 1;
+  --font-height: 0;
+  font-size: calc(var(--text-scale-factor) * var(--font-height));
+  --scale-x: 1;
+  --rotate: 0deg;
+  transform: rotate(var(--rotate)) scaleX(var(--scale-x)) scale(var(--min-font-size-inv));
+}
+
+.pdf-embed .textLayer .markedContent {
+  display: contents;
+}
+
+.pdf-embed .textLayer span[role="img"] {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+.pdf-embed .textLayer ::-moz-selection {
+  background: rgba(31, 111, 92, 0.3);
+  color: transparent;
+}
+
+.pdf-embed .textLayer ::selection {
+  background: rgba(31, 111, 92, 0.3);
+  color: transparent;
+}
