@@ -18,7 +18,7 @@
 
   <div class="ribbon">
     <div class="ribbon-inner">
-      <span class="ribbon-text">◯卐⬱</span>
+      <span class="ribbon-text"></span>
       <a href="{{ '/contact.html' | relative_url }}" class="cta">Doe mee</a>
     </div>
   </div>
@@ -27,17 +27,9 @@
     <h1 class="title" aria-label="{{ site.title }}">De <img
         src="{{ '/assets/images/logo-o.png' | relative_url }}"
         alt="" aria-hidden="true" class="title-o"
-        width="162" height="160">mwenteling</h1>
+        width="162" height="160">omwenteling</h1>
     <p class="tagline">{{ site.description | default: site.github.project_tagline }}</p>
   </header>
-
-  {% if page.url == '/' %}
-  <nav class="paginanav" aria-label="Hoofdnavigatie">
-    <a href="{{ '/nieuws.html' | relative_url }}">Nieuws</a>
-    <a href="{{ '/handvest.html' | relative_url }}">Handvest</a>
-    <a href="{{ '/contact.html' | relative_url }}">Contact</a>
-  </nav>
-  {% endif %}
 
   <div id="main" role="main">
     <article class="markdown-body">
