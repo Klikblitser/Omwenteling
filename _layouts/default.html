@@ -19,7 +19,7 @@
   <div class="ribbon">
     <div class="ribbon-inner">
       <span class="ribbon-text">Iedereen is welkom bij onze informatiebijeenkomsten &amp; workshops</span>
-      <a href="{{ '/another-page.html' | relative_url }}" class="cta">Doe mee</a>
+      <a href="{{ '/contact.html' | relative_url }}" class="cta">Doe mee</a>
     </div>
   </div>
 
@@ -30,6 +30,14 @@
         width="162" height="160">mwenteling</h1>
     <p class="tagline">{{ site.description | default: site.github.project_tagline }}</p>
   </header>
+
+  {% if page.url == '/' %}
+  <nav class="paginanav" aria-label="Hoofdnavigatie">
+    <a href="{{ '/nieuws.html' | relative_url }}">Nieuws</a>
+    <a href="{{ '/handvest.html' | relative_url }}">Handvest</a>
+    <a href="{{ '/contact.html' | relative_url }}">Contact</a>
+  </nav>
+  {% endif %}
 
   <div id="main" role="main">
     <article class="markdown-body">
