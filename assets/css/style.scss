@@ -86,10 +86,17 @@ header .title {
   color: #16211f;
   display: inline-block;
   cursor: pointer;
+}
+
+/* De O is het logo; alleen die draait bij hover */
+header .title .title-o {
+  height: 0.72em;          /* ≈ kapitaalhoogte van Fraunces */
+  width: auto;
+  vertical-align: -0.02em;
   transition: transform 0.8s ease;
 }
 
-header .title:hover {
+header .title:hover .title-o {
   transform: rotate(360deg);
 }
 
