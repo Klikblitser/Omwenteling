@@ -1,7 +1,15 @@
 ---
 layout: default
 ---
+{% if page.url == '/' %}
+  <nav class="paginanav" aria-label="Hoofdnavigatie">
+    <a href="{{ '/nieuws.html' | relative_url }}">Nieuws</a>
+    <a href="{{ '/handvest.html' | relative_url }}">Handvest</a>
+    <a href="{{ '/contact.html' | relative_url }}">Contact</a>
+  </nav>
+  {% endif %}
 
+Komen ze hiermee onder elkaar te staan of naast elkaar?
 {% if site.posts.size > 0 %}
 {% assign laatste = site.posts.first %}
 {% assign laatste_afbeelding = laatste.image | default: laatste.thumbnail %}
@@ -62,7 +70,7 @@ Naast het burgerberaad bespreken we ook het burgerinitiatief en het uitdaagrecht
 
 ### Meld je aan voor een bijeenkomst
 
-Interesse om aan te sluiten bij een informatiebijeenkomst of workshop? <a class="cta-inline" href="./another-page.html">Neem contact op</a>
+Interesse om aan te sluiten bij een informatiebijeenkomst of workshop? <a class="cta-inline" href="{{ '/contact.html' | relative_url }}">Neem contact op</a>
 
 ### Blijf op de hoogte
 
