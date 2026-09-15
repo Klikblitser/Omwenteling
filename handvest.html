@@ -1,0 +1,85 @@
+---
+layout: default
+---
+
+<div class="betoog">
+<style>
+.betoog {
+  --ink: #004105;
+}
+.betoog .betoog-title {
+  font-family: Arial, sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink);
+  border-top: 2px solid var(--ink);
+  padding-top: 0.8rem;
+  margin: 0 0 1.8rem;
+}
+.betoog .intro::first-letter {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 4.4rem;
+  font-weight: bold;
+  float: left;
+  line-height: 0.8;
+  padding: 0.1rem 0.5rem 0 0;
+  color: var(--ink);
+}
+.betoog h2 {
+  font-size: 0.85rem;
+  font-family: Arial, sans-serif;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink);
+  border-top: 2px solid var(--ink);
+  padding-top: 0.8rem;
+  margin: 3rem 0 1.2rem;
+}
+.betoog ul.concepten {
+  margin: 0.8rem 0 1.5rem 1.5rem;
+  line-height: 1.9;
+  padding: 0;
+}
+.betoog ul.concepten li {
+  margin-bottom: 0.9rem;
+  font-size: 1.03rem;
+}
+.betoog ul.concepten li strong {
+  color: var(--ink);
+}
+.betoog blockquote {
+  background: #fdffe6;
+  border-left: 4px solid var(--ink);
+  padding: 1.2rem 1.5rem;
+  margin: 2.2rem 0;
+  font-style: italic;
+  font-size: 1.05rem;
+}
+.betoog blockquote cite {
+  display: block;
+  margin-top: 0.8rem;
+  font-style: normal;
+  font-family: Arial, sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  color: var(--ink);
+}
+.betoog .highlight {
+  background: #fdffe6;
+  border: 2px solid var(--ink);
+  padding: 1.2rem 1.5rem;
+  margin: 1.8rem 0;
+  font-size: 0.97rem;
+}
+.betoog .highlight strong { color: var(--ink); }
+</style>
+
+<p class="betoog-title">Ons handvest is openbaar en revisie vind plaats na elke vergadering</p>
+
+{% include pdf-viewer.html file="/assets/documenten/handvest-stichting-de-omwenteling.pdf"
+   title="Handvest Stichting de Omwenteling" size="1,2 MB" %}
+
+<p><a href="{{ '/' | relative_url }}">⬅️ Terug naar de hoofdpagina</a></p>
+
+</div>
