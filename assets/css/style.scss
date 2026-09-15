@@ -28,7 +28,7 @@ a:hover {
 }
 
 a:hover {
-  color: #123f34;
+  color: #3f1212;
   text-decoration: underline;
 }
 
@@ -103,7 +103,7 @@ header .title:hover .title-o {
 header .tagline {
   margin: 0;
   font-size: 1.15em;
-  color: #3d4d49;
+  color: #4d3d3d;
 }
 
 #main {
@@ -117,7 +117,7 @@ header .tagline {
   margin-top: 2.5rem;
   padding-top: 0.5rem;
   border-top: 3px solid #1f6f5c;
-  color: #16211f;
+  color: #211616;
 }
 
 .markdown-body h3 {
@@ -132,14 +132,14 @@ header .tagline {
 }
 
 .markdown-body strong {
-  color: #16211f;
+  color: #211616;
 }
 
 .cta-inline {
   display: inline-block;
   padding: 6px 16px;
   margin-left: 0.5rem;
-  background: #1f6f5c;
+  background: #6f1f1f;
   color: #ffffff !important;
   border-radius: 4px;
   font-weight: 600;
@@ -240,7 +240,7 @@ footer {
 
 .privacy-note {
   font-size: 0.85em;
-  color: #6b7a76;
+  color: #7a6b6b;
   margin-top: 0.75rem;
   font-style: italic;
 }
@@ -248,7 +248,7 @@ footer {
 /* Nieuwsoverzicht */
 .nieuws-item {
   padding: 1.5rem 0;
-  border-bottom: 1px solid #cfe0da;
+  border-bottom: 1px solid #e0cfcf;
 }
 
 .nieuws-item:last-child {
@@ -258,7 +258,7 @@ footer {
 .nieuws-datum {
   margin: 0 0 0.3rem;
   font-size: 0.85em;
-  color: #6b7a76;
+  color: #7a6b6b;
 }
 
 .nieuws-item h3 {
@@ -267,11 +267,11 @@ footer {
 }
 
 .nieuws-item h3 a {
-  color: #16211f;
+  color: #211616;
 }
 
 .nieuws-item h3 a:hover {
-  color: #1f6f5c;
+  color: #6f1f1f;
   text-decoration: none;
 }
 
@@ -287,7 +287,7 @@ footer {
 
 .post-datum {
   font-size: 0.9em;
-  color: #6b7a76;
+  color: #7a6b6b;
   margin: 0 0 0.4rem;
 }
 
@@ -309,7 +309,7 @@ footer {
   gap: 1.5rem;
   align-items: center;
   background: #ffffff;
-  border: 1px solid #cfe0da;
+  border: 1px solid #e0cfcf;
   border-radius: 8px;
   padding: 1.25rem;
   margin: 0 0 2.5rem;
@@ -338,7 +338,7 @@ footer {
   font-size: 0.75em;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #e8b33d;
+  color: #e83dd1;
   font-weight: 700;
 }
 
@@ -348,11 +348,11 @@ footer {
 }
 
 .laatste-nieuws-tekst h3 a {
-  color: #16211f;
+  color: #211616;
 }
 
 .laatste-nieuws-tekst h3 a:hover {
-  color: #1f6f5c;
+  color: #6f1f1f;
   text-decoration: none;
 }
 
