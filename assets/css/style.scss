@@ -93,17 +93,41 @@ header .title .title-o {
   height: 1.8em;          /* ≈ kapitaalhoogte van Fraunces */
   width: auto;
   vertical-align: -0.35em;
-  transition: transform 6s ease;
+  transition: transform 3s ease;
 }
 
 header .title:hover .title-o {
-  transform: rotate(-2160deg);
+  transform: rotate(-360deg);
 }
 
 header .tagline {
   margin: 0;
   font-size: 1.15em;
   color: #4d3d3d;
+}
+
+/* Navigatiebalk onder de header */
+.paginanav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.75rem;
+  max-width: 880px;
+  margin: 0 auto 2rem;
+  padding: 0 1.5rem;
+}
+
+.paginanav a {
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: none !important;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.paginanav a:hover {
+  border-bottom-color: #e8b33d;
 }
 
 #main {
