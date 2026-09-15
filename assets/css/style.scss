@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  color: #1f6f5c;        // groen behouden
+  color: #6f1f1f;        // groen behouden
   font-style: italic;    // schuin
   font-weight: 700;      // dikgedrukt
   text-decoration: underline;
@@ -23,7 +23,7 @@ a {
 }
 
 a:hover {
-  color: #1f6f5c;
+  color: #6f1f1f;
   text-decoration: underline;
 }
 
@@ -56,8 +56,8 @@ a:hover {
 .ribbon .cta {
   display: inline-block;
   padding: 8px 18px;
-  background: #e8b33d;
-  color: #16211f !important;
+  background: #e83d3d;
+  color: #000000 !important;
   border-radius: 4px;
   font-weight: 700;
   text-decoration: none !important;
@@ -65,7 +65,7 @@ a:hover {
 }
 
 .ribbon .cta:hover {
-  background: #f4c86a;
+  background: #f46a6a;
   transform: translateY(-1px);
 }
 
@@ -83,7 +83,7 @@ header .title {
   font-style: italic;
   font-weight: 600;
   font-size: 3em;
-  color: #16211f;
+  color: #000000;
   display: inline-block;
   cursor: pointer;
 }
@@ -128,7 +128,7 @@ header .tagline {
 .markdown-body h4,
 .markdown-body h5,
 .markdown-body h6 {
-  color: #1f6f5c;
+  color: #6f1f1f;
 }
 
 .markdown-body strong {
@@ -147,7 +147,7 @@ header .tagline {
 }
 
 .cta-inline:hover {
-  background: #123f34;
+  background: #3f1212;
   text-decoration: none !important;
 }
 
@@ -184,7 +184,7 @@ footer {
 
 .current-section a {
   float: right;
-  color: #e8b33d !important;
+  color: #e83d3d !important;
   font-weight: 600;
 }
 
