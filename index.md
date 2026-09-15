@@ -9,7 +9,6 @@ layout: default
   </nav>
   {% endif %}
 
-Komen ze hiermee onder elkaar te staan of naast elkaar?
 {% if site.posts.size > 0 %}
 {% assign laatste = site.posts.first %}
 {% assign laatste_afbeelding = laatste.image | default: laatste.thumbnail %}

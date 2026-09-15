@@ -75,6 +75,10 @@ header {
   margin: 0 auto;
   padding: 3.5rem 1.5rem 2.5rem;
   text-align: center;
+  /* Maakt de header een query-container, zodat de titel hieronder in
+     cqi (1% van de inhoudsbreedte) kan schalen. Padding en max-width
+     zitten daar automatisch in verrekend, anders dan bij vw. */
+  container-type: inline-size;
 }
 
 header .title {
@@ -82,7 +86,14 @@ header .title {
   font-family: 'Fraunces', Georgia, serif;
   font-style: italic;
   font-weight: 600;
+  /* De titel is gemeten 8,81x zo breed als de fontgrootte; bij 11cqi
+     vult hij dus 97% van de header en past hij altijd op een regel.
+     De eerste regel is de terugval voor browsers zonder cqi-steun.
+     De interpolatie houdt Sass ervan af min() zelf uit te rekenen
+     (em en cqi zijn voor Sass onverenigbare eenheden). */
   font-size: 3em;
+  font-size: #{"min(3em, 11cqi)"};
+  white-space: nowrap;
   color: #000000;
   display: inline-block;
   cursor: pointer;
@@ -213,7 +224,10 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-  header .title { font-size: 2.2em; }
+  /* Smallere zijmarge op telefoons: de titel schaalt mee met de
+     inhoudsbreedte, dus minder padding = een grotere titel. De oude
+     vaste 2.2em is vervallen; min() regelt het nu zelf. */
+  header { padding: 2.5rem 1rem 2rem; }
   .ribbon-inner { flex-direction: column; align-items: flex-start; }
 }
 
