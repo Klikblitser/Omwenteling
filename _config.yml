@@ -10,3 +10,38 @@ description: De Omwenteling is een beweging van mensen die zich inzetten voor ee
 collections:
   posts:
     permalink: /nieuws/:year/:month/:day/:title/
+
+# Absolute basis-URL. jekyll-seo-tag heeft deze nodig om van og:image een
+# volledige https-URL te maken; WhatsApp en Signal negeren een relatief pad.
+# GitHub Pages vult dit bij een eigen domein zelf in, maar expliciet zetten
+# houdt ook een lokale build (`bundle exec jekyll serve`) juist.
+url: https://omwenteling.com
+
+# Standaard-afbeelding voor link-previews in WhatsApp, Signal, Mastodon,
+# LinkedIn. 1200x630 (1.91:1) is de verhouding die Meta aanhoudt; alles wat
+# daarvan afwijkt wordt vanuit het midden bijgesneden. Zelf gehost, zodat er
+# bij het delen geen derde partij aan te pas komt - zie privacy.md.
+# Opnieuw genereren: python3 tools/og-image.py
+#
+# jekyll-seo-tag leest "image" uitsluitend uit de front matter van een
+# pagina, niet als losse site-sleutel; vandaar de omweg via defaults.
+# Bewust alleen scope "pages": kreeg elk bericht in _posts deze sleutel ook,
+# dan zou index.md (die op post.image test) deze banner als thumbnail van
+# het laatste nieuwsbericht tonen. Een bericht met een eigen "image:" in de
+# front matter gebruikt die nu vanzelf, zowel als thumbnail als preview.
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      image:
+        path: /assets/images/og-omwenteling.png
+        width: 1200
+        height: 630
+        alt: >-
+          De Omwenteling - informatiebijeenkomsten en workshops over
+          burgerberaden
+
+# Let op: geen "twitter:"-blok toevoegen. jekyll-seo-tag kiest vanzelf al
+# summary_large_image zodra er een afbeelding is, en zou bij een leeg
+# twitter-blok een kapotte <meta name="twitter:site" content="@"> uitstoten.
