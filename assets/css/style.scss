@@ -321,6 +321,13 @@ footer {
   padding: 1.5rem;
 }
 
+/* De eerste kop in een kaart zit al tegen de padding aan; de standaard
+   marge eronder zou hem naar beneden duwen. */
+.contact-info > h3:first-child,
+.map-container > h3:first-child {
+  margin-top: 0;
+}
+
 .contact-item {
   margin: 1rem 0;
   display: flex;
