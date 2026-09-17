@@ -3,8 +3,13 @@
 <!-- Setup Google Analytics -->
 {% include head-custom-google-analytics.html %}
 
-<!-- You can set your favicon here -->
-<!-- link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}" -->
+<!-- Tabbladpictogram: de logo-O. favicon.ico bevat 16, 32 en 48 pixels met
+     een doorzichtige achtergrond, zodat hij op een licht en een donker
+     tabblad allebei leesbaar is. Beide bestanden staan in de wortel van de
+     site, waar browsers en iOS ze ook zonder deze regels zouden zoeken.
+     Opnieuw maken: python3 tools/favicon.py -->
+<link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="any">
+<link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}">
 
 <!-- Componenten voor de burgerberaadpagina's. Alleen geladen op pagina's met
      "burgerberaad: true" in de front matter, zodat de rest van de site deze
