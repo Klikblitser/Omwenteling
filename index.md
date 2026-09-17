@@ -37,7 +37,7 @@ Verkiezingen belonen zichtbaarheid; met [loting](https://www.omwenteling.com/kle
 
 ### Waarom dit in Velsen gebeurt
 
-Via Stichting De Omwenteling bouwen we in [Velsen](https://omwenteling.com/velsen.html) aan een burgerberaad met een eigen mandaatstructuur en statutair fundament. De achtergrond staat beschreven in het [handvest voor de epistemische democratie](https://omwenteling.com/handvest.html) en in het kort in het [betoog voor de filosofie achter ons initiatief](http://www.omwenteling.com/omwenteling-demo.html).
+Via Stichting De Omwenteling bouwen we in [Velsen](https://omwenteling.com/velsen.html) aan een burgerberaad met een eigen mandaatstructuur en statutair fundament. Het fundament van de organisatie staat met o.a. eisen  en grondslagen beschreven in het [handvest voor de epistemische democratie](https://omwenteling.com/handvest.html) en in het kort nog eens in het [betoog voor de filosofie achter ons initiatief](http://www.omwenteling.com/omwenteling-demo.html).
 
 ## Informatiebijeenkomsten & workshops
 
