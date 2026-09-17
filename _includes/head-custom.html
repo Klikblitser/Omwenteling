@@ -6,4 +6,11 @@
 <!-- You can set your favicon here -->
 <!-- link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}" -->
 
+<!-- Componenten voor de burgerberaadpagina's. Alleen geladen op pagina's met
+     "burgerberaad: true" in de front matter, zodat de rest van de site deze
+     ~9 kB niet hoeft op te halen. -->
+{% if page.burgerberaad %}
+<link rel="stylesheet" href="{{ '/assets/css/burgerberaad.css' | relative_url }}">
+{% endif %}
+
 <!-- end custom head snippets -->

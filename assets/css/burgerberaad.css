@@ -1,0 +1,350 @@
+/* ---------------------------------------------------------------------------
+   Componenten voor de burgerberaadpagina's (kleroterion, velsen, beverwijk,
+   legitimiteitscode).
+
+   Deze CSS stond eerder drie keer gedupliceerd in de pagina's zelf, in het
+   blauwe palet van vbbskw.com. Hier staat zij een keer, in het palet van
+   omwenteling.com. Het bestand wordt alleen geladen op pagina's met
+   "burgerberaad: true" in de front matter; zie _includes/head-custom.html.
+--------------------------------------------------------------------------- */
+
+.bb {
+  --bb-ink:    #6f1f1f;  /* donkerrood — kaders, koppen, donkere vlakken */
+  --bb-paper:  #faf9f6;  /* lichte tekst op die donkere vlakken */
+  --bb-accent: #e83d3d;  /* signaalrood — knoppen en labels */
+  --bb-deep:   #211616;  /* bijna zwart — tekst op signaalrood */
+  --bb-pale:   #e0cfcf;  /* lichtroze — subtiele randen */
+  --bb-tint:   #f6efec;  /* warme vulling — voorbeeld- en highlightblokken */
+  --bb-muted:  #7a6b6b;  /* gedempt — bijschriften */
+}
+
+.bb * { box-sizing: border-box; }
+
+/* De site geeft alle links cursief + vet + onderstreept. Binnen deze
+   componenten (inhoudsopgave, knoppen, kaarten) oogt dat rommelig. */
+.bb a { font-style: normal; font-weight: 600; }
+
+/* ── KOP ── */
+.bb-header {
+  border-bottom: 4px solid var(--bb-ink);
+  padding: 0 0 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.bb-header .site-name {
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--bb-ink);
+  margin-bottom: 0.3rem;
+}
+.bb-header h1 { margin: 0; }
+.bb-header .subtitle {
+  font-style: italic;
+  font-size: 1.15rem;
+  color: #555;
+  margin-top: 0.6rem;
+}
+.bb-header .versie {
+  font-size: 0.88rem;
+  color: var(--bb-muted);
+  margin-top: 0.8rem;
+}
+
+/* ── AFBEELDINGEN ──
+   Eerder stond hier een kale "img { max-width: 50% }", die op elke
+   afbeelding van de pagina sloeg in plaats van op deze ene. Bovendien
+   centreert "margin: auto" niets zolang het beeld inline is. */
+.bb-beeld {
+  display: block;
+  max-width: min(100%, 420px);
+  height: auto;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+.bb-beeld--breed { max-width: 100%; }
+.bb-bijschrift {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--bb-muted);
+  margin: -8px 0 24px;
+}
+
+/* ── INHOUDSOPGAVE ── */
+.bb .toc {
+  border: 2px solid var(--bb-ink);
+  background: #ffffff;
+  padding: 1.5rem 2rem;
+  margin: 2.5rem 0;
+}
+.bb .toc h2 {
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin: 0 0 1rem;
+  border-top: none;
+  padding-top: 0;
+  border-bottom: 1px solid var(--bb-ink);
+  padding-bottom: 0.5rem;
+  color: var(--bb-ink);
+}
+.bb .toc ol { padding-left: 1.2em; column-count: 2; column-gap: 2rem; margin: 0; }
+.bb .toc li { font-size: 0.9rem; margin-bottom: 0.3rem; }
+.bb .toc a { color: var(--bb-ink); text-decoration: none; }
+.bb .toc a:hover { text-decoration: underline; }
+
+/* ── SECTIES ── */
+.bb section {
+  margin: 3.5rem 0;
+  border-top: 2px solid var(--bb-ink);
+  padding-top: 2rem;
+}
+.bb section > h2:first-child { border-top: none; margin-top: 0; padding-top: 0; }
+
+/* ── CITATEN ── */
+.bb blockquote {
+  background: var(--bb-tint);
+  border-left: 4px solid var(--bb-ink);
+  padding: 1.2rem 1.5rem;
+  margin: 2rem 0;
+  font-style: italic;
+  font-size: 1.05rem;
+}
+.bb blockquote cite {
+  display: block;
+  margin-top: 0.8rem;
+  font-style: normal;
+  font-family: Arial, sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  color: var(--bb-ink);
+}
+
+/* ── GENUMMERDE STAPPEN ── */
+.bb .stappen { counter-reset: stap; list-style: none; padding: 0; }
+.bb .stappen li {
+  counter-increment: stap;
+  position: relative;
+  padding: 1.2rem 1.2rem 1.2rem 4rem;
+  border: 1px solid var(--bb-pale);
+  margin-bottom: 0.8rem;
+  background: #ffffff;
+}
+.bb .stappen li::before {
+  content: counter(stap);
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3rem;
+  background: var(--bb-ink);
+  color: var(--bb-paper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.bb .stappen li strong { display: block; margin-bottom: 0.3rem; }
+
+/* ── KAARTENRASTER ── */
+.bb .elementen-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.bb .element-card { border: 1px solid var(--bb-ink); padding: 1.2rem; background: #ffffff; }
+.bb .element-card h4 {
+  font-family: Arial, sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--bb-accent);
+  margin: 0 0 0.5rem;
+}
+.bb .element-card p { font-size: 0.9rem; margin: 0; line-height: 1.6; }
+
+/* ── VOORBEELDEN ── */
+.bb .voorbeeld {
+  background: var(--bb-tint);
+  border-left: 4px solid var(--bb-ink);
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1.2rem;
+}
+.bb .voorbeeld h4 {
+  font-family: Arial, sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--bb-ink);
+  margin: 0 0 0.5rem;
+}
+.bb .voorbeeld p { font-size: 0.95rem; margin: 0; }
+
+/* ── OPROEP ── */
+.bb .cta-box {
+  background: var(--bb-ink);
+  color: var(--bb-paper);
+  padding: 2.5rem;
+  margin: 3rem 0;
+  text-align: center;
+}
+.bb .cta-box h2 { color: var(--bb-paper); border-top: none; padding-top: 0; margin: 0 0 1rem; }
+.bb .cta-box p { font-size: 1.05rem; margin-bottom: 1.5rem; opacity: 0.92; }
+/* De site kleurt <strong> globaal bijna-zwart (#211616). Op de donkerrode
+   vlakken hieronder levert dat een contrast van 1,6:1 op — onleesbaar.
+   Binnen die vlakken erft nadruk dus de lichte tekstkleur. */
+.bb .cta-box strong, .bb .cta-box em,
+.bb .aanbieding strong, .bb .aanbieding em { color: inherit; }
+
+.bb .btn {
+  display: inline-block;
+  background: var(--bb-accent);
+  color: #000000 !important;
+  text-decoration: none !important;
+  padding: 0.8rem 2rem;
+  font-family: Arial, sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 0.3rem;
+  transition: background 0.2s, transform 0.15s;
+}
+.bb .btn:hover { background: #f46a6a; transform: translateY(-1px); }
+.bb .btn-secondary {
+  background: transparent;
+  border: 2px solid var(--bb-paper);
+  color: var(--bb-paper) !important;
+}
+.bb .btn-secondary:hover { background: rgba(255, 255, 255, 0.12); }
+
+/* ── FASEN ── */
+.bb .fasen {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 2px solid var(--bb-ink);
+  margin: 1.5rem 0;
+  background: #ffffff;
+}
+.bb .fase { padding: 1.5rem; border-right: 1px solid var(--bb-ink); }
+.bb .fase:last-child { border-right: none; }
+.bb .fase-nr {
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  color: var(--bb-pale);
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 0.4rem;
+}
+.bb .fase h4 { font-size: 1rem; margin: 0 0 0.6rem; color: var(--bb-accent); }
+.bb .fase p { font-size: 0.88rem; margin: 0; line-height: 1.5; }
+
+/* ── DRIE ROLLEN ── */
+.bb .rollen-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 2px solid var(--bb-ink);
+  margin: 1.5rem 0;
+}
+.bb .rol { padding: 1.5rem; border-right: 1px solid var(--bb-ink); background: #ffffff; }
+.bb .rol:last-child { border-right: none; }
+.bb .rol-tag {
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: var(--bb-ink);
+  color: var(--bb-paper);
+  padding: 0.25rem 0.6rem;
+  margin-bottom: 0.6rem;
+}
+.bb .rol-tag.opgeven { background: var(--bb-accent); color: #000000; }
+.bb .rol-tag.loting  { background: var(--bb-ink); }
+.bb .rol-tag.mix     { background: var(--bb-muted); }
+.bb .rol h4 { font-size: 1rem; margin: 0 0 0.5rem; color: var(--bb-ink); }
+.bb .rol p { font-size: 0.88rem; margin: 0 0 0.6rem; line-height: 1.55; }
+.bb .rol .rol-mandaat {
+  font-size: 0.82rem;
+  border-top: 1px solid var(--bb-pale);
+  padding-top: 0.6rem;
+  margin-top: 0.4rem;
+  color: #444;
+}
+.bb .rol .rol-mandaat strong { color: var(--bb-ink); }
+
+/* ── ARTIKELEN (legitimiteitscode) ── */
+.bb .artikel {
+  margin: 2rem 0;
+  padding: 1.2rem 1.5rem;
+  border: 1px solid var(--bb-pale);
+  background: #ffffff;
+}
+.bb .artikel h3 {
+  font-size: 1rem;
+  color: var(--bb-ink);
+  margin: 0 0 0.8rem;
+  border-bottom: 1px solid var(--bb-pale);
+  padding-bottom: 0.4rem;
+}
+.bb .artikel p, .bb .artikel li { font-size: 0.95rem; line-height: 1.75; }
+.bb .artikel ul { margin: 0.5rem 0 0 1.2rem; }
+
+.bb .aanbieding {
+  background: var(--bb-ink);
+  color: var(--bb-paper);
+  padding: 2rem;
+  margin: 2.5rem 0;
+}
+.bb .aanbieding h2 { color: var(--bb-paper); border-top: none; padding-top: 0; margin: 0 0 0.8rem; }
+.bb .aanbieding p { opacity: 0.92; line-height: 1.7; margin-bottom: 0.6rem; }
+.bb .aanbieding a { color: #f3c9c9; }
+
+/* ── ACCENTBLOK ── */
+.bb .highlight {
+  background: var(--bb-tint);
+  border: 2px solid var(--bb-ink);
+  padding: 1.2rem 1.5rem;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+.bb .highlight strong { color: var(--bb-ink); }
+.bb .highlight--concept { border-style: dashed; }
+
+/* ── KEUZEKAARTEN (kleroterion: gemeente kiezen) ── */
+.bb .keuzes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.bb .keuze { border: 1px solid var(--bb-ink); padding: 1.2rem 1.4rem; background: #ffffff; }
+.bb .keuze h3 { margin: 0 0 0.4rem; font-size: 1.2rem; }
+.bb .keuze h3 a { color: var(--bb-ink); text-decoration: none; }
+.bb .keuze h3 a:hover { color: var(--bb-accent); }
+.bb .keuze p { margin: 0; font-size: 0.92rem; }
+
+/* ── LOPENDE LIJSTEN ──
+   Vervangt de style-attributen die eerder op elke afzonderlijke <ul> stonden. */
+.bb .bb-lijst { margin: 1rem 0 1rem 1.5rem; line-height: 1.8; padding: 0; }
+.bb .bb-lijst--ruim { line-height: 2; margin-bottom: 1.5rem; }
+
+/* ── SCHEIDING ── */
+.bb .rule { border: none; border-top: 1px solid var(--bb-ink); margin: 1.5rem 0; }
+
+/* ── TERUGLINK ── */
+.bb-terug { margin-top: 2.5rem; }
+
+/* ── SMALLE SCHERMEN ── */
+@media (max-width: 640px) {
+  .bb .toc { padding: 1.2rem 1.2rem; }
+  .bb .toc ol { column-count: 1; }
+  .bb .fasen, .bb .rollen-grid { grid-template-columns: 1fr; }
+  .bb .fase, .bb .rol { border-right: none; border-bottom: 1px solid var(--bb-ink); }
+  .bb .fase:last-child, .bb .rol:last-child { border-bottom: none; }
+  .bb .cta-box { padding: 1.5rem 1.2rem; }
+  .bb .btn { display: block; margin: 0.5rem 0; }
+  .bb-beeld { max-width: 100%; }
+}
