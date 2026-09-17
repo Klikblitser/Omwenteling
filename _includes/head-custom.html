@@ -13,4 +13,11 @@
 <link rel="stylesheet" href="{{ '/assets/css/burgerberaad.css' | relative_url }}">
 {% endif %}
 
+<!-- Leaflet voor de pagina's met een kaart. Lokaal geserveerd; het stond
+     eerder op unpkg.com, wat het IP-adres van elke bezoeker naar een
+     externe CDN stuurde. -->
+{% if page.leaflet %}
+<link rel="stylesheet" href="{{ '/assets/vendor/leaflet/1.9.4/leaflet.css' | relative_url }}">
+{% endif %}
+
 <!-- end custom head snippets -->

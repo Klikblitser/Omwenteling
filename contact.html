@@ -3,11 +3,10 @@ layout: default
 title: Contact
 lang: nl
 description: Contactgegevens van De Omwenteling
+leaflet: true
 ---
 
-<title>Contact - De Omwenteling</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  <style>
+<style>
       h1, h2 {
       color: #004080;
     }
@@ -77,9 +76,7 @@ description: Contactgegevens van De Omwenteling
       margin-top: 10px;
       font-style: italic;
     }
-  </style>
-</head>
-<body>
+</style>
 
   <h1>Contact</h1>
   <p>Heeft u vragen over de Stichting de Omwenteling of wilt u aanmelden? Neem gerust contact met ons op.</p>
@@ -113,13 +110,13 @@ description: Contactgegevens van De Omwenteling
     <div class="map-container">
       <h2>Locatie</h2>
       <div id="map"></div>
-      <p class="privacy-note">Deze kaart wordt geladen via OpenStreetMap. Hierbij wordt uw IP-adres gedeeld met OpenStreetMap servers. <a href="/privacy.html">Meer info</a></p>
+      <p class="privacy-note">De kaart komt van OpenStreetMap. Uw browser maakt daarvoor rechtstreeks verbinding met servers van de OpenStreetMap Foundation, waarbij uw IP-adres bij die stichting terechtkomt. <a href="/privacy.html#kaart">Meer info</a></p>
     </div>
   </div>
 
   <a href="https://www.omwenteling.com" class="back-link">⬅️ Terug naar de hoofdpagina</a>
 
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="{{ '/assets/vendor/leaflet/1.9.4/leaflet.js' | relative_url }}"></script>
   <script>
     // Coördinaten voor Binnenspuikanaal, IJmuiden
     // Pas deze aan naar de exacte locatie indien nodig
@@ -138,6 +135,3 @@ description: Contactgegevens van De Omwenteling
       .bindPopup('<strong>VBBSKW</strong><br>Binnenspuikanaal West')
       .openPopup();
   </script>
-
-</body>
-</html>

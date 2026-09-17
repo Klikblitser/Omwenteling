@@ -2,6 +2,7 @@
 layout: default
 title: Contact
 permalink: /contact.html
+leaflet: true
 ---
 
 ## Contact
@@ -43,15 +44,14 @@ Stuur een e-mail naar <a href="mailto:voorzitter@vbbskw.com">voorzitter@vbbskw.c
 
 <div id="map"></div>
 
-<p class="privacy-note">Deze kaart wordt geladen via OpenStreetMap. Hierbij wordt uw IP-adres gedeeld met OpenStreetMap servers. <a href="https://www.omwenteling.com/privacy">Meer info</a></p>
+<p class="privacy-note">De kaart komt van OpenStreetMap. Uw browser maakt daarvoor rechtstreeks verbinding met servers van de OpenStreetMap Foundation, waarbij uw IP-adres bij die stichting terechtkomt. <a href="/privacy.html#kaart">Meer info</a></p>
 
   </div>
 </div>
 
 [⬅️ Terug naar de hoofdpagina](./)
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="{{ '/assets/vendor/leaflet/1.9.4/leaflet.js' | relative_url }}"></script>
 <script>
   // Coördinaten voor Binnenspuikanaal, IJmuiden
   var lat = 52.469634;
