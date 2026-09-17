@@ -33,11 +33,11 @@ Een burgerberaad is een groep inwoners, geloot uit de hele gemeente, die zich sa
 
 ### Loting naast verkiezingen
 
-Verkiezingen belonen zichtbaarheid; met [loting](https://www.vbbskw.com/kleroterion.html) voegen we daar een tweede vorm van legitimiteit aan toe, gebaseerd op representatie in plaats van populariteit.
+Verkiezingen belonen zichtbaarheid; met [loting](https://www.omwenteling.com/kleroterion.html) voegen we daar een tweede vorm van legitimiteit aan toe, gebaseerd op representatie in plaats van populariteit.
 
 ### Waarom dit in Velsen gebeurt
 
-Via Stichting De Omwenteling bouwen we in Velsen aan een burgerberaad met een eigen mandaatstructuur en statutair fundament. De achtergrond staat beschreven in het [betoog voor de filosofie achter ons initiatief](http://www.omwenteling.com/omwenteling-demo.html).
+Via Stichting De Omwenteling bouwen we in [Velsen](https://omwenteling.com/velsen.html) aan een burgerberaad met een eigen mandaatstructuur en statutair fundament. De achtergrond staat beschreven in het [handvest voor de epistemische democratie](https://omwenteling.com/handvest.html) en in het kort in het [betoog voor de filosofie achter ons initiatief](http://www.omwenteling.com/omwenteling-demo.html).
 
 ## Informatiebijeenkomsten & workshops
 
@@ -73,4 +73,4 @@ Interesse om aan te sluiten bij een informatiebijeenkomst of workshop? <a class=
 
 ### Blijf op de hoogte
 
-Lees meer over het [de filosofie achter ons initiatief](http://www.omwenteling.com/omwenteling-demo.html) of over het loting-principe op de [projectpagina](https://www.vbbskw.com/kleroterion.html) van VBBSKW, of volg de ontwikkelingen via [VBBSKW](https://www.vbbskw.com).
+Lees meer over het [de filosofie achter ons initiatief](http://www.omwenteling.com/omwenteling-demo.html) of over het loting-principe op de [projectpagina](https://www.omwenteling.com/kleroterion.html) van Stichtin de Omwenteling.
