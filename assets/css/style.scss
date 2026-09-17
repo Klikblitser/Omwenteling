@@ -99,6 +99,24 @@ header .title {
   cursor: pointer;
 }
 
+/* De titel is de weg terug naar de homepage. De site geeft links
+   standaard cursief, vet, onderstreept en donkerrood; hier houdt de
+   titel haar eigen vorm. "font: inherit" overschrijft in een keer de
+   font-style en font-weight van de globale a-regel. */
+header .title a {
+  color: inherit;
+  font: inherit;          /* overschrijft font-style én font-weight in één keer */
+  text-decoration: none;
+  display: inline-block;
+}
+header .title a:hover { color: inherit; text-decoration: none; }
+header .title a:focus-visible { outline: 3px solid #e83d3d; outline-offset: 6px; border-radius: 4px; }
+header .title a:focus-visible {
+  outline: 3px solid #e83d3d;
+  outline-offset: 6px;
+  border-radius: 4px;
+}
+
 /* De O is het logo; alleen die draait bij hover */
 header .title .title-o {
   height: 1.8em;          /* ≈ kapitaalhoogte van Fraunces */
