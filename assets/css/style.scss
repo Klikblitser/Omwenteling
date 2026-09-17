@@ -1,7 +1,33 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,600&family=Inter:wght@400;600&display=swap');
+/* Fraunces en Inter worden door de site zelf geserveerd. Ze stonden hiervoor
+   bij fonts.googleapis.com, waarmee de browser van elke bezoeker zijn
+   IP-adres naar Google stuurde nog voordat er iets te kiezen viel. Dat
+   verdroeg zich niet met de belofte in privacy.md. Beide letters staan onder
+   de SIL Open Font License; de licentieteksten liggen naast de bestanden in
+   assets/fonts/. Opnieuw genereren: python3 tools/fonts.py */
+
+@font-face {
+  font-family: 'Fraunces';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  /* De optische as (opsz) zit nog in het bestand, zodat de titel bij elke
+     vensterbreedte de juiste snede krijgt. */
+  src: url('../fonts/fraunces-italic-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  /* Variabel bestand: 400 tot en met 900 in een keer. De 700 van links en
+     de 900 van de ribbon zijn daarmee echte snedes in plaats van door de
+     browser nagebootst vet. */
+  font-weight: 400 900;
+  font-display: swap;
+  src: url('../fonts/inter-variable.woff2') format('woff2');
+}
 
 * { box-sizing: border-box; }
 

@@ -70,7 +70,9 @@ def main():
     paden = haal_fonts()
 
     titel = ImageFont.truetype(paden["fraunces"], TITEL_PT)
-    stel_gewicht_in(titel, weight=600, opticalsize=144, softness=0, wonky=0)
+    # Zelfde asinstellingen als het webfont in assets/fonts, zodat de
+    # banner en de kop van de site dezelfde letter tonen.
+    stel_gewicht_in(titel, weight=600, opticalsize=96, softness=0, wonky=1)
 
     sub = ImageFont.truetype(paden["inter"], 30)
     stel_gewicht_in(sub, weight=600, opticalsize=32)
