@@ -123,10 +123,34 @@ header .title .title-o {
   width: auto;
   vertical-align: -0.35em;
   transition: transform 3s ease;
+  /* Eenmalige draai bij het laden van elke pagina. Precies 360 graden,
+     zodat het eindpunt samenvalt met de ruststand en er aan het eind
+     geen zichtbare sprong ontstaat wanneer de animatie het element
+     weer loslaat. Dezelfde richting als de hover-draai. */
+  animation: titel-o-intro 1.2s ease-out 1;
+}
+
+@keyframes titel-o-intro {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(-360deg); }
 }
 
 header .title:hover .title-o {
   transform: rotate(-540deg);
+}
+
+/* Bezoekers die in hun systeem hebben aangegeven bewegende beelden te
+   willen beperken, krijgen een stilstaand logo. De hover-draai vervalt
+   daarmee ook: die is weliswaar zelf opgeroepen, maar 540 graden over
+   drie seconden is voor wie last heeft van beweging geen klein effect. */
+@media (prefers-reduced-motion: reduce) {
+  header .title .title-o {
+    animation: none;
+    transition: none;
+  }
+  header .title:hover .title-o {
+    transform: none;
+  }
 }
 
 header .tagline {
