@@ -65,6 +65,15 @@ Aan de hand van voorbeelden zoals het burgerberaad in Oost-België (Ostbelgien) 
 
 Naast het burgerberaad bespreken we ook het burgerinitiatief en het uitdaagrecht — bestaande instrumenten in de Velsense verordeningen waar je nu al gebruik van kunt maken.
 
+<div class="cta-box">
+  <h2>Doe mee</h2>
+  <p>Het VBBSKW bouwt aan een burgerberaad in Velsen. U kunt op twee manieren bijdragen &mdash; met verschillende rollen en verschillende manieren van selectie:</p>
+  <p><strong>Lotingspool:</strong> stel uzelf beschikbaar voor de pool waaruit deelnemers van het burgerberaad worden geloot. Aanmelding verplicht tot niets.<br>
+  <strong>Opstartcommissie:</strong> help het proces vormgeven &mdash; communicatie, planning, opdrachtvraag. Via de enquête: workshop &lsquo;organiseren&rsquo;.</p>
+  <a href="{{ '/enquete.html' | relative_url }}" class="btn">Aanmelden (loting of commissie)</a>
+  <a href="{{ '/kleroterion.html' | relative_url }}" class="btn btn-secondary">Meer over loting</a>
+</div>
+
 ## Doe mee
 
 ### Meld je aan voor een bijeenkomst
