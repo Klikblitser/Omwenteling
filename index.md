@@ -5,7 +5,7 @@ layout: default
   <nav class="paginanav" aria-label="Hoofdnavigatie">
     <a href="{{ '/nieuws.html' | relative_url }}">Nieuws</a>
     <a href="{{ '/handvest.html' | relative_url }}">Handvest</a>
-    <a href="{{ '/contact.html' | relative_url }}">Contact</a>
+    <a href="{{ '/kleroterion.html' | relative_url }}">Burgerberaden</a>
   </nav>
   {% endif %}
 
