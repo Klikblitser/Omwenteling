@@ -65,12 +65,12 @@ Aan de hand van voorbeelden zoals het burgerberaad in Oost-België (Ostbelgien) 
 
 Naast het burgerberaad bespreken we ook het burgerinitiatief en het uitdaagrecht — bestaande instrumenten in de Velsense verordeningen waar je nu al gebruik van kunt maken.
 
-<div class="cta-box">
+<div class="cta-box" id="aanmelden">
   <h2>Doe mee!</h2>
   <p>De Omwenteling werkt aan een burgerberaad voor meer zeggenschap van inwoners in Velsen.</p>
     <form action="https://formspree.io/f/xbdlnwpw" method="POST" class="nieuwsbrief-form">
       <label for="nb-email"><strong>Nieuwsbrief:</strong> blijf op de hoogte van de Omwenteling!</label><br>
-      <input type="email" id="nb-email" name="email" placeholder="penningmeester@vbbskw.com" required>
+      <input type="email" id="nb-email" name="email" placeholder="uw@email.com" required>
       <button type="submit" class="btn">Aanmelden</button>
       <br>
       <label><input type="checkbox" name="toestemming" value="ja" required> Ik geef toestemming mijn e-mailadres te gebruiken voor de nieuwsbrief van de Omwenteling. Afmelden kan altijd.</label>
