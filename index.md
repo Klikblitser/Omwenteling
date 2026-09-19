@@ -67,17 +67,17 @@ Naast het burgerberaad bespreken we ook het burgerinitiatief en het uitdaagrecht
 
 <div class="cta-box">
   <h2>Doe mee</h2>
-  <p>De Omwenteling werkt aan een burgerberaad voor ... in Velsen.
-  <form action="https://formspree.io/f/xbdlnwpw" method="POST" class="nieuwsbrief-form">
-    <label for="nb-email"><strong>Nieuwsbrief:</strong> blijf op de hoogte van de Omwenteling!</label><br>
-    <input type="email" id="nb-email" name="email" placeholder="penningmeester@vbbskw.com" required>
-    <button type="submit" class="btn">Aanmelden</button>
-    <br>
-    <label><input type="checkbox" name="toestemming" value="ja" required> Ik geef toestemming mijn e-mailadres te gebruiken voor de nieuwsbrief van de Omwenteling. Afmelden kan altijd.</label>
-    <input type="hidden" name="_subject" value="Nieuwe aanmelding nieuwsbrief">
-    <input type="hidden" name="_next" value="{{ '/bedankt.html' | absolute_url }}">
-    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
-  </form>
+  <p>De Omwenteling werkt aan een burgerberaad voor ... in Velsen.</p>
+    <form action="https://formspree.io/f/xbdlnwpw" method="POST" class="nieuwsbrief-form">
+      <label for="nb-email"><strong>Nieuwsbrief:</strong> blijf op de hoogte van de Omwenteling!</label><br>
+      <input type="email" id="nb-email" name="email" placeholder="penningmeester@vbbskw.com" required>
+      <button type="submit" class="btn">Aanmelden</button>
+      <br>
+      <label><input type="checkbox" name="toestemming" value="ja" required> Ik geef toestemming mijn e-mailadres te gebruiken voor de nieuwsbrief van de Omwenteling. Afmelden kan altijd.</label>
+      <input type="hidden" name="_subject" value="Nieuwe aanmelding nieuwsbrief">
+      <input type="hidden" name="_next" value="{{ '/bedankt.html' | absolute_url }}">
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+    </form>
   <p><strong>Lotingspool:</strong> stel uzelf beschikbaar voor de pool waaruit deelnemers van het burgerberaad worden geloot. Aanmelding verplicht tot niets.<br>
   <a href="{{ '/enquete.html' | relative_url }}" class="btn">Aanmelden (loting of commissie)</a>
   <strong>Opstartcommissie:</strong> help het proces vormgeven &mdash; communicatie, planning, opdrachtvraag. Via de enquête: workshop &lsquo;organiseren&rsquo;.</p>
