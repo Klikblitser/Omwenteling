@@ -79,8 +79,8 @@ Naast het burgerberaad bespreken we ook het burgerinitiatief en het uitdaagrecht
       <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
     </form>
   <p><strong>Lotingspool:</strong> stel uzelf beschikbaar voor de pool waaruit deelnemers van het burgerberaad worden geloot. Aanmelding verplicht tot niets.<br>
-  <a href="{{ '/enquete.html' | relative_url }}" class="btn">Aanmelden (loting of commissie)</a>
-  <strong>Opstartcommissie:</strong> help het proces vormgeven &mdash; communicatie, planning, opdrachtvraag. Via de enquête: workshop &lsquo;organiseren&rsquo;.</p>
+  <a href="{{ '/enquete.html' | relative_url }}" class="btn">Aanmelden (loting of commissie)</a></p>
+  <p><strong>Opstartcommissie:</strong> help het proces vormgeven &mdash; communicatie, planning, opdrachtvraag. Via de enquête: workshop &lsquo;organiseren&rsquo;.</p>
   <a href="{{ '/kleroterion.html' | relative_url }}" class="btn btn-secondary">Meer over loting</a>
 </div>
 
