@@ -43,22 +43,50 @@ body {
   background: #faf9f6;
 }
 
+/* Links dragen de letter van de naam in de kop: Fraunces italic 600.
+   De letter zelf onderscheidt de link al van de lopende tekst in Inter,
+   dus geen onderstreping in rust; bij hover en toetsenbordfocus komt er
+   een dunne lijn onder, net onder de staartletters. Onderdelen die hun
+   eigen vorm houden (knoppen, navigatie, koppen) staan in de lijst
+   hieronder. */
 a {
-  color: #6f1f1f;        // groen behouden
-  font-style: italic;    // schuin
-  font-weight: 700;      // dikgedrukt
-  text-decoration: underline;
+  color: #6f1f1f;
+  font-family: 'Fraunces', Georgia, serif;
+  font-style: italic;
+  font-weight: 600;
+  text-decoration: none;
   transition: color 0.2s ease;
 }
 
-a:hover {
-  color: #6f1f1f;
-  text-decoration: underline;
-}
-
-a:hover {
+a:hover,
+a:focus-visible {
   color: #fa4949;
   text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+/* Knoppen, navigatie en koppen houden de letter van hun omgeving.
+   "font-family: inherit" is hier nodig omdat Fraunces alleen als
+   cursieve snede is geladen: een element dat wel de familie erft maar
+   font-style op normal zet, krijgt anders een door de browser
+   rechtgezette cursief. */
+.ribbon .cta,
+.paginanav a,
+.cta-inline,
+.cta-box .btn,
+.current-section a,
+.nieuws-item h3 a,
+.nieuws-lees-meer,
+.laatste-nieuws-tekst h3 a,
+.markdown-body h1 a,
+.markdown-body h2 a,
+.markdown-body h3 a,
+.markdown-body h4 a,
+.markdown-body h5 a,
+.markdown-body h6 a {
+  font-family: inherit;
+  font-style: normal;
 }
 
 /* Bovenste mobilisatie-ribbon, vervangt de oude download-bar */

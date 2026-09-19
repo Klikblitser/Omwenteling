@@ -20,9 +20,10 @@
 
 .bb * { box-sizing: border-box; }
 
-/* De site geeft alle links cursief + vet + onderstreept. Binnen deze
-   componenten (inhoudsopgave, knoppen, kaarten) oogt dat rommelig. */
-.bb a { font-style: normal; font-weight: 600; }
+/* De site zet links in Fraunces italic. Binnen deze componenten
+   (inhoudsopgave, knoppen, kaarten) oogt dat rommelig; hier geldt de
+   letter van de omgeving. */
+.bb a { font-family: inherit; font-style: normal; font-weight: 600; }
 
 /* ── KOP ── */
 .bb-header {
