@@ -67,21 +67,31 @@ Naast het burgerberaad bespreken we ook het burgerinitiatief en het uitdaagrecht
 
 <div class="cta-box" id="aanmelden">
   <h2>Doe mee!</h2>
-  <p>De Omwenteling werkt aan een burgerberaad voor meer zeggenschap van inwoners in Velsen.</p>
+  <p class="cta-intro">De Omwenteling werkt aan een burgerberaad voor meer zeggenschap van inwoners in Velsen.</p>
+
+  <div class="cta-blok">
     <form action="https://formspree.io/f/xbdlnwpw" method="POST" class="nieuwsbrief-form">
-      <label for="nb-email"><strong>Nieuwsbrief:</strong> blijf op de hoogte van de Omwenteling!</label><br>
-      <input type="email" id="nb-email" name="email" placeholder="uw@email.com" required>
-      <button type="submit" class="btn">Aanmelden</button>
-      <br>
-      <label><input type="checkbox" name="toestemming" value="ja" required> Ik geef toestemming mijn e-mailadres te gebruiken voor de nieuwsbrief van de Omwenteling. Afmelden kan altijd.</label>
+      <label class="nb-label" for="nb-email"><strong>Nieuwsbrief:</strong> blijf op de hoogte van de Omwenteling!</label>
+      <div class="nb-rij">
+        <input type="email" id="nb-email" name="email" placeholder="uw@email.com" autocomplete="email" required>
+        <button type="submit" class="btn">Aanmelden</button>
+      </div>
+      <label class="nb-toestemming"><input type="checkbox" name="toestemming" value="ja" required> <span>Ik geef toestemming mijn e-mailadres te gebruiken voor de nieuwsbrief van de Omwenteling. Afmelden kan altijd.</span></label>
       <input type="hidden" name="_subject" value="Nieuwe aanmelding nieuwsbrief">
       <input type="hidden" name="_next" value="{{ '/bedankt.html' | absolute_url }}">
       <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
     </form>
-  <p><strong>Lotingspool:</strong> stel uzelf beschikbaar voor de pool waaruit deelnemers van het burgerberaad worden geloot. Aanmelding verplicht tot niets.<br>
-  <a href="{{ '/enquete.html' | relative_url }}" class="btn">Aanmelden (loting of commissie)</a></p>
-  <p><strong>Opstartcommissie:</strong> help het proces vormgeven &mdash; communicatie, planning, opdrachtvraag. Via de enquête: workshop &lsquo;organiseren&rsquo;.</p>
-  <a href="{{ '/kleroterion.html' | relative_url }}" class="btn btn-secondary">Meer over loting</a>
+  </div>
+
+  <div class="cta-blok">
+    <p><strong>Lotingspool:</strong> stel uzelf beschikbaar voor de pool waaruit deelnemers van het burgerberaad worden geloot. Aanmelding verplicht tot niets.</p>
+    <a href="{{ '/enquete.html' | relative_url }}" class="btn">Aanmelden (loting of commissie)</a>
+  </div>
+
+  <div class="cta-blok">
+    <p><strong>Opstartcommissie:</strong> help het proces vormgeven &mdash; communicatie, planning, opdrachtvraag. Via de enqu&ecirc;te: workshop &lsquo;organiseren&rsquo;.</p>
+    <a href="{{ '/kleroterion.html' | relative_url }}" class="btn btn-secondary">Meer over loting</a>
+  </div>
 </div>
 
 ## Doe mee

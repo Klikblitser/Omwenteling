@@ -568,7 +568,98 @@ footer {
 
 .cta-box { scroll-margin-top: 5rem; }
 
+/* ── DOE-MEE-BLOK: drie stappen ───────────────────────────────────────
+   De kop en de inleiding blijven gecentreerd; de stappen zelf lijnen
+   links uit. Gecentreerde alinea's van vier of vijf regels lezen op een
+   telefoon slecht: elke regel begint op een andere plek. Een dunne lijn
+   scheidt de stappen, zodat nieuwsbrief, lotingspool en opstartcommissie
+   niet als een lap tekst aan elkaar plakken. */
+.markdown-body .cta-box .cta-intro { margin-bottom: 2rem; }
+
+.cta-blok {
+  text-align: left;
+  max-width: 34rem;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(250, 249, 246, 0.22);
+}
+.cta-blok:first-of-type { padding-top: 0; border-top: none; }
+.cta-blok + .cta-blok { margin-top: 1.5rem; }
+.markdown-body .cta-blok p { margin: 0 0 1rem; }
+.cta-blok .btn { margin: 0.3rem 0 0; }
+
+/* Nieuwsbriefformulier */
+.nieuwsbrief-form .nb-label {
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+.nb-rij {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.nieuwsbrief-form input[type="email"] {
+  /* 1rem = 16px: onder die maat zoomt iOS bij het aantikken van een veld
+     in op de pagina en komt de bezoeker scheef uit. */
+  font-family: inherit;
+  font-size: 1rem;
+  flex: 1 1 13rem;
+  min-width: 0;
+  min-height: 44px;
+  padding: 0.7rem 0.9rem;
+  color: #2b1c1c;
+  background: #faf9f6;
+  border: 1px solid #e0cfcf;
+  border-radius: 4px;
+}
+.nieuwsbrief-form input[type="email"]::placeholder { color: #7a6b6b; }
+
+.nieuwsbrief-form .btn {
+  /* Even hoog als het invoerveld, zodat de rij één geheel is. */
+  margin: 0;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+
+.nb-toestemming {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-top: 0.9rem;
+  font-size: 0.85em;
+  line-height: 1.5;
+  opacity: 0.9;
+  cursor: pointer;
+}
+.nb-toestemming input[type="checkbox"] {
+  flex: none;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin: 0.15rem 0 0;
+  accent-color: #e83d3d;
+}
+
+.cta-box input:focus-visible,
+.cta-box .btn:focus-visible {
+  outline: 3px solid #faf9f6;
+  outline-offset: 2px;
+}
+
 @media only screen and (max-width: 600px) {
   .cta-box { padding: 1.5rem 1.2rem; }
+  /* Knoppen over de volle breedte: makkelijker te raken met een duim en
+     de regels vallen niet uiteen in twee ongelijke helften. */
   .cta-box .btn { display: block; margin: 0.5rem 0; }
+  /* Veld en knop onder elkaar, allebei over de volle breedte. Let op:
+     dit gaat via flex-basis en niet via flex-direction: column — in een
+     kolom slaat de basis van 13rem op de hoogte, en dan wordt het
+     invoerveld 13rem hoog. */
+  .nb-rij > * { flex-basis: 100%; }
+  .nieuwsbrief-form .btn { display: flex; margin: 0; }
 }
