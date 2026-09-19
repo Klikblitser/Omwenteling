@@ -487,3 +487,55 @@ footer {
    geladen op pagina's die de include pdf-viewer.html gebruiken. De oude
    <object>-insluiting is vervallen: mobiele browsers tonen een PDF daarin
    niet inline maar bieden alleen een download aan. */
+
+   /* ── Doe mee-blok ─────────────────────────────── */
+.cta-box {
+  background: #211616;
+  color: #faf9f6;
+  padding: 2.5rem;
+  margin: 3rem 0;
+  border-radius: 8px;
+  text-align: center;
+}
+.markdown-body .cta-box h2 {
+  color: #faf9f6;
+  border-top: none;
+  padding-top: 0;
+  margin: 0 0 1rem;
+}
+.markdown-body .cta-box p {
+  font-size: 1.05em;
+  margin-bottom: 1.5rem;
+  opacity: 0.92;
+}
+.markdown-body .cta-box strong,
+.markdown-body .cta-box em { color: inherit; }
+
+.cta-box .btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  margin: 0.3rem;
+  background: #e83d3d;
+  color: #000000 !important;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  border-radius: 4px;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+.cta-box .btn:hover { background: #f46a6a; transform: translateY(-1px); color: #000000 !important; }
+.cta-box .btn-secondary {
+  background: transparent;
+  border: 2px solid #faf9f6;
+  color: #faf9f6 !important;
+}
+.cta-box .btn-secondary:hover { background: rgba(255,255,255,0.12); color: #faf9f6 !important; }
+
+@media only screen and (max-width: 600px) {
+  .cta-box { padding: 1.5rem 1.2rem; }
+  .cta-box .btn { display: block; margin: 0.5rem 0; }
+}
