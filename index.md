@@ -73,4 +73,4 @@ Interesse om aan te sluiten bij een informatiebijeenkomst of workshop? <a class=
 
 ### Blijf op de hoogte
 
-Lees meer over het [de filosofie achter ons initiatief](http://www.omwenteling.com/omwenteling-demo.html) of over het loting-principe op de [projectpagina](https://www.omwenteling.com/kleroterion.html) van Stichtin de Omwenteling.
+Lees meer over het [de filosofie achter ons initiatief](http://www.omwenteling.com/omwenteling-demo.html) of over het loting-principe op de [projectpagina voor BURGERBERADEN](https://www.omwenteling.com/kleroterion.html) van Stichtin de Omwenteling.
