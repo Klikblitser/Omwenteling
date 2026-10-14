@@ -5,7 +5,6 @@ date: 2026-10-14
 thumbnail: /assets/images/hvab.jpg	
 ---
 
-{{ page.title }}
 {{ page.date | date: "%d-%m-%Y" }}
 ![Alt-tekst](https://github.com/Klikblitser/Omwenteling/blob/main/assets/images/hvab.jpg?raw=true)
 
