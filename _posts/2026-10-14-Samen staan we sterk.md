@@ -5,9 +5,6 @@ date: 2026-10-14
 thumbnail: /assets/images/hvab.jpg	
 ---
 
-{{ page.date | date: "%d-%m-%Y" }}
-![Alt-tekst](https://github.com/Klikblitser/Omwenteling/blob/main/assets/images/hvab.jpg?raw=true)
-
 # Samen staan we sterk (als een huis)
 
 We hebben de afgelopen maanden niet stil gezeten. Zo waren er twee presentaties en afgelopen dinsdag een lezing. De Omwenteling heeft ook van zich laten horen bij een bijeenkomst van We Doen Het Samen-coalitie: Recht voor de Buurt! Na vandaag mogen we ook zeggen dat we als partner zijn aangesloten bij het [Huis van Actief Burgerschap](https://huisvanactiefburgerschap.nl/lokalehuizen/) en zijn daarmee formeel dan ook een 'Huis'.
