@@ -2,7 +2,7 @@
 layout: post
 title: "Samen staan we sterk"
 date: 2026-10-14
-thumbnail: /assets/images/hvab.jpeg	
+thumbnail: /assets/images/hvab.jpg	
 ---
 
 {{ page.title }}
