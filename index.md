@@ -31,6 +31,10 @@ layout: default
 
 Dat klinkt misschien utopisch maar we geloven dat het mogelijk is door macht te spreiden. Daarvoor moeten we het algemeen handelingsvermogen vergroten en de gemeenschap verheffen. Als de inwoner in het systeem vastloopt kan je nog zoveel workshops, juridische bijstand en cursussen burgerschap bieden; dit repareerd geen kapot systeem. Daarom willen we ook het handelingsperspectief verbeteren door zeggenschap en invloed op een transparante en eerlijke manier te institutionaliseren. Voor dit doel is het burgerberaad als een mes dat aan twee zijden snijd.
 
+### Participatieverordening
+
+De gemeente Velsen heeft nog geen participatieverordening vastgesteld. Zij is verplicht om dit te doen voor 1 januari 2027. Eind november komt het voor stemming in de gemeenteraad en is er de mogelijkheid om in te spreken. **Als wij als inwoners willen meebeslissen over hoe deze samenwerking eruit komt te zien, moeten wij van ons laten horen**
+
 ## Wat is een burgerberaad?
 
 Een burgerberaad is een groep inwoners, geloot uit de hele gemeente, die zich samen verdiept in een vraagstuk en het lokale bestuur adviseert. Geen verkiezingscampagne, geen partijbelang — een dwarsdoorsnede van de gemeenschap zelf aan tafel.
