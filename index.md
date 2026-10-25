@@ -33,7 +33,19 @@ Dat klinkt misschien utopisch maar we geloven dat het mogelijk is door macht te 
 
 ### Participatieverordening
 
-De gemeente Velsen heeft nog geen participatieverordening vastgesteld. Zij is verplicht om dit te doen voor 1 januari 2027. Eind november komt het voor stemming in de gemeenteraad en is er de mogelijkheid om in te spreken. **Als wij als inwoners willen meebeslissen over hoe deze samenwerking eruit komt te zien, moeten wij van ons laten horen**
+De gemeente Velsen heeft nog geen participatieverordening vastgesteld. Zij is verplicht om dit te doen voor 1 januari 2027. Eind november komt het voor stemming in de gemeenteraad en is er de mogelijkheid om in te spreken. **Als wij als inwoners zeggenschap willen over hoe deze samenwerking eruit komt te zien, móeten wij van ons laten horen!**
+
+#### Maatschappelijk vastgoed
+
+Om de (culturele) gemeenschap structureel ruimte te bieden, in de breedste zin van het woord, is een opname van een maatschappelijk kader voor vastgoed in de verordening noodzakelijk. Omdat Velsen de verordening van 2022 dus binnen twee maanden moet herzien is dit ons nauwe venster om een recht op maatschappelijk vastgoed te laten opnemen; naar Schots model: een register, een voorkeursperiode die Didam-proof is, en gemeenschapswaarde als gunningscriterium.
+
+#### Burgerberaad als participatiemiddel
+
+De raad kan zijn beslissingsbevoegdheid niet overdragen aan een gelote groep, want een burgerberaad is geen bestuursorgaan. Voor een burgerberaad, met drie kenmerken: gestratificeerde loting, geïnformeerde deliberatie en een schriftelijk advies is (in zelfstandige vorm) beslissingsbevoegheid dus niet haalbaar. Wat wel kan, is zelfbinding van de raad aan procedure en motivering. Daar moet de verordening zich ook op richten.
+
+#### Duurzame participatie
+
+Met een kan-bepaling krijgt de raad de bevoegdheid, maar niet de plicht, om op grond van artikel 84 Gemeentewet een gelote adviescommissie in te stellen. Die commissie bewaakt de kwaliteit, continuïteit en opvolging van burgerberaden en maken we een eerste aanleg naar een geïnstitutionaliseerde, duurzame samenwerking, naar het voorbeeld van de Belgische Duitstalige gemeenschap (Oost-Belgische Model).
 
 ## Wat is een burgerberaad?
 
