@@ -27,11 +27,7 @@ layout: default
 </div>
 {% endif %}
 
-## Hoe krijgen inwoners echt zeggenschap over hun eigen omgeving?
-
-Dat klinkt misschien utopisch maar we geloven dat het mogelijk is door macht te spreiden. Daarvoor moeten we het algemeen handelingsvermogen vergroten en de gemeenschap verheffen. Als de inwoner in het systeem vastloopt kan je nog zoveel workshops, juridische bijstand en cursussen burgerschap bieden; dit repareerd geen kapot systeem. Daarom willen we ook het handelingsperspectief verbeteren door zeggenschap en invloed op een transparante en eerlijke manier te institutionaliseren. Voor dit doel is het burgerberaad als een mes dat aan twee zijden snijd.
-
-### Participatieverordening
+## Participatieverordening
 
 De gemeente Velsen heeft nog geen participatieverordening vastgesteld. Zij is verplicht om dit te doen voor 1 januari 2027. Eind november komt het voor stemming in de gemeenteraad en is er de mogelijkheid om in te spreken. **Als wij als inwoners zeggenschap willen over hoe deze samenwerking eruit komt te zien, móeten wij van ons laten horen!**
 
@@ -46,6 +42,10 @@ De raad kan zijn beslissingsbevoegdheid niet overdragen aan een gelote groep, wa
 #### Duurzame participatie
 
 Met een kan-bepaling krijgt de raad de bevoegdheid, maar niet de plicht, om op grond van artikel 84 Gemeentewet een gelote adviescommissie in te stellen. Die commissie bewaakt de kwaliteit, continuïteit en opvolging van burgerberaden en maken we een eerste aanleg naar een geïnstitutionaliseerde, duurzame samenwerking, naar het voorbeeld van de Belgische Duitstalige gemeenschap (Oost-Belgische Model).
+
+### Hoe krijgen inwoners zeggenschap over hun omgeving?
+
+Dat klinkt misschien utopisch maar we geloven dat het mogelijk is door macht te spreiden. Daarvoor moeten we het algemeen handelingsvermogen vergroten en de gemeenschap verheffen. Als de inwoner in het systeem vastloopt kan je nog zoveel workshops, juridische bijstand en cursussen burgerschap bieden; dit repareerd geen kapot systeem. Daarom willen we ook het handelingsperspectief verbeteren door zeggenschap en invloed op een transparante en eerlijke manier te institutionaliseren. Voor dit doel is het burgerberaad als een mes dat aan twee zijden snijd.
 
 ## Wat is een burgerberaad?
 
