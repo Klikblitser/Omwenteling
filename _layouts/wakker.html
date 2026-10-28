@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'nl' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Eigen layout voor gastpagina's van Creatief Collectief Wakker. Bewust
+       zonder {% raw %}{% seo %}{% endraw %}: die plugin zet de sitenaam "De Omwenteling" in de
+       titel en in og:site_name. De tags hieronder doen hetzelfde werk,
+       alleen met de naam van het collectief. -->
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description | strip_html | escape }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:site_name" content="{{ page.site_name | default: page.title | escape }}">
+  <meta property="og:title" content="{{ page.title | escape }}">
+  <meta property="og:description" content="{{ page.description | strip_html | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  {% if page.image %}
+  <meta property="og:image" content="{{ page.image.path | absolute_url }}">
+  <meta property="og:image:alt" content="{{ page.image.alt | escape }}">
+  <meta name="twitter:card" content="summary_large_image">
+  {% endif %}
+
+  <!-- Tabbladpictogram: een getypte W op het pruimrood van de pagina, als
+       SVG in de pagina zelf, zodat er geen extra bestand nodig is. -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232b1424'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Courier New,monospace' font-weight='700' font-size='22' fill='%23e2b04a'%3EW%3C/text%3E%3C/svg%3E">
+
+  <link rel="preload" href="{{ '/assets/fonts/courier-prime-latin-700-normal.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="{{ '/assets/css/wakker.css' | relative_url }}">
+
+  {% include head-custom-google-analytics.html %}
+</head>
+
+<body>
+  <div class="vlaggetjes" aria-hidden="true"></div>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="voet">
+    <p>{{ page.footer | default: page.title }}</p>
+  </footer>
+
+  <script src="{{ '/assets/js/wakker.js' | relative_url }}" defer></script>
+</body>
+</html>

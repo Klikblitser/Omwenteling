@@ -1,0 +1,275 @@
+/* ---------------------------------------------------------------------------
+   Layout "wakker": gastpagina van Creatief Collectief Wakker.
+
+   Kleuren en vormen komen uit de foto's van het Mystieke Poëziecircus:
+   het pruimrode kleed, het licht van de lamp met franjes, de roze vlaggetjes
+   in de festivaltent en het papier in de typmachine.
+
+   Letters: Courier Prime voor alles wat "getypt" is (titel, koppen, het
+   vel papier), Inter voor de lopende tekst. Beide staan lokaal in
+   /assets/fonts; er gaat geen verzoek naar een externe server.
+--------------------------------------------------------------------------- */
+
+@font-face {
+  font-family: 'Courier Prime';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/courier-prime-latin-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Courier Prime';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/courier-prime-latin-700-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url('../fonts/inter-variable.woff2') format('woff2');
+}
+
+:root {
+  --kleed:  #2b1424;  /* pruimrood van het kleed — achtergrond */
+  --kleed-diep: #210f1b;
+  --licht:  #e2b04a;  /* lamplicht — koppen en links */
+  --vlag:   #f08bb7;  /* roze vlaggetje — het citaat */
+  --papier: #f4e9d4;  /* vel in de typmachine */
+  --inkt:   #2a1d18;  /* tekst op papier */
+  --tekst:  #eee2cc;  /* lopende tekst op het kleed */
+  --gedempt:#b9a596;
+
+  --typ: 'Courier Prime', 'Courier New', Courier, monospace;
+  --lees: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --breed: 68rem;
+  --kolom: 36rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--kleed);
+  color: var(--tekst);
+  font-family: var(--lees);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+a { color: var(--licht); text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 2px solid var(--vlag); outline-offset: 3px; border-radius: 2px; }
+
+/* ── VLAGGETJES ──
+   Een rij vlaggetjes zoals in de festivaltent: roze, papier, roze, lamplicht.
+   Eén SVG-tegel die horizontaal herhaalt. */
+.vlaggetjes {
+  height: 38px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='136' height='38' viewBox='0 0 136 38'%3E%3Cpath d='M0 3 Q34 9 68 3 T136 3' fill='none' stroke='%23b9a596' stroke-width='1'/%3E%3Cpath d='M4 4 L30 7 L16 32 Z' fill='%23f08bb7'/%3E%3Cpath d='M38 7 L64 4 L52 30 Z' fill='%23f4e9d4'/%3E%3Cpath d='M72 4 L98 7 L84 33 Z' fill='%23f08bb7'/%3E%3Cpath d='M106 7 L132 4 L120 29 Z' fill='%23e2b04a'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-position: center top;
+}
+
+main {
+  max-width: var(--breed);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* ── OPENING ── */
+.opening {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  align-items: center;
+  padding: clamp(2.5rem, 7vw, 5.5rem) 0 clamp(3rem, 7vw, 5rem);
+}
+
+.opening h1 {
+  font-family: var(--typ);
+  font-weight: 700;
+  font-size: clamp(2.6rem, 7.2vw, 5.4rem);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  color: var(--papier);
+  margin: 0;
+}
+
+.opening .ondertitel {
+  font-family: var(--typ);
+  font-size: clamp(1.2rem, 2.4vw, 1.6rem);
+  color: var(--licht);
+  margin: 1.1rem 0 0;
+}
+
+.opening .inleiding {
+  max-width: 30rem;
+  margin: 1.6rem 0 0;
+  color: var(--tekst);
+}
+
+.opening figure { margin: 0; }
+.opening img {
+  border-radius: 3px;
+  /* Het rode toneellicht van de foto loopt een beetje over in de pagina. */
+  box-shadow: 0 0 0 1px rgba(244, 233, 212, 0.08), 0 24px 70px -10px rgba(190, 30, 40, 0.45);
+}
+
+/* Typmachine-effect op de titel; zie wakker.js. Elke letter staat er al
+   en wordt alleen zichtbaar gemaakt, zodat er niets verspringt. */
+.letter { opacity: 0; position: relative; }
+.letter.getypt { opacity: 1; }
+.letter.cursor::after {
+  content: '';
+  position: absolute;
+  right: -0.06em;
+  top: 0.12em;
+  width: 0.09em;
+  height: 0.82em;
+  background: var(--licht);
+  animation: knipper 1s steps(1) infinite;
+}
+@keyframes knipper { 50% { opacity: 0; } }
+
+/* ── HOOFDSTUKKEN ── */
+.hoofdstuk {
+  padding: clamp(2.5rem, 6vw, 4.5rem) 0;
+  border-top: 1px solid rgba(244, 233, 212, 0.12);
+}
+
+.hoofdstuk h2 {
+  font-family: var(--typ);
+  font-weight: 700;
+  font-size: clamp(1.6rem, 3.4vw, 2.2rem);
+  line-height: 1.15;
+  color: var(--licht);
+  margin: 0 0 1.4rem;
+}
+
+.hoofdstuk p { max-width: var(--kolom); margin: 0 0 1.1rem; }
+
+.twee-kolom {
+  display: grid;
+  grid-template-columns: minmax(0, var(--kolom)) 1fr;
+  gap: clamp(1.5rem, 5vw, 4rem);
+  align-items: start;
+}
+
+/* Het citaat staat naast de tekst, in de kleur van de vlaggetjes. */
+.citaat {
+  margin: 0;
+  font-family: var(--typ);
+  font-size: clamp(1.45rem, 3vw, 2rem);
+  line-height: 1.3;
+  color: var(--vlag);
+  padding-top: 0.2rem;
+}
+
+/* ── FOTO'S ── */
+.fotoduo {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 0.9rem;
+  margin-top: 2rem;
+}
+.fotoduo img { width: 100%; height: 100%; object-fit: cover; border-radius: 3px; }
+
+.foto-breed { margin: 2.2rem 0 0; }
+.foto-breed img { width: 100%; border-radius: 3px; }
+
+figcaption {
+  font-family: var(--typ);
+  font-size: 0.9rem;
+  color: var(--gedempt);
+  margin-top: 0.6rem;
+}
+
+/* ── HET VEL PAPIER ──
+   De uitleg over het Poëziecircus staat op een vel uit de typmachine. */
+.circus {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(1.5rem, 5vw, 3.5rem);
+  align-items: center;
+}
+
+.vel {
+  background: var(--papier);
+  color: var(--inkt);
+  font-family: var(--typ);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  padding: clamp(1.6rem, 4vw, 2.6rem);
+  transform: rotate(-0.8deg);
+  box-shadow: 0 20px 45px -12px rgba(0, 0, 0, 0.55);
+}
+.vel h2 { color: var(--inkt); margin-bottom: 1.2rem; }
+.vel p { max-width: none; }
+.vel p:last-child { margin-bottom: 0; }
+
+.circus figure { margin: 0; }
+.circus img { border-radius: 3px; }
+
+.hoofdstuk .slot {
+  font-family: var(--typ);
+  font-size: clamp(1.15rem, 2.2vw, 1.35rem);
+  color: var(--papier);
+  max-width: 34rem;
+  margin: 2.4rem 0 0;
+}
+
+/* ── MEDIA ── */
+.media { list-style: none; padding: 0; margin: 0; max-width: var(--kolom); }
+.media li { margin: 0 0 1.1rem; }
+.media .bron { display: block; font-family: var(--typ); font-size: 0.9rem; color: var(--gedempt); }
+
+/* ── CONTACT ──
+   Een tweede, kleiner briefje, de andere kant op gekanteld. */
+.briefje {
+  background: var(--papier);
+  color: var(--inkt);
+  font-family: var(--typ);
+  max-width: 30rem;
+  padding: clamp(1.5rem, 4vw, 2.2rem);
+  transform: rotate(0.7deg);
+  box-shadow: 0 20px 45px -12px rgba(0, 0, 0, 0.55);
+}
+.briefje h2 { color: var(--inkt); }
+.briefje p { margin: 0 0 1rem; }
+.briefje a { color: #8a2a3d; }
+.briefje dl { margin: 0; }
+.briefje dt { font-weight: 700; margin-top: 0.9rem; }
+.briefje dd { margin: 0; }
+
+/* ── VOET ── */
+.voet {
+  max-width: var(--breed);
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+  font-family: var(--typ);
+  font-size: 0.9rem;
+  color: var(--gedempt);
+}
+.voet p { margin: 0; }
+
+/* ── SMAL SCHERM ── */
+@media (max-width: 760px) {
+  .opening, .twee-kolom, .circus { grid-template-columns: 1fr; }
+  .opening figure { max-width: 26rem; }
+  .fotoduo { grid-template-columns: 1fr; }
+  .vel, .briefje { transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .letter { opacity: 1; }
+  .letter.cursor::after { animation: none; display: none; }
+}
