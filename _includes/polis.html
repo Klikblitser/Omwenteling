@@ -1,2 +1,3 @@
-<div class="polis" data-conversation_id="{{ include.id }}"></div>
-<script async src="https://pol.is/embed.js"></script>
+{% if include.titel %}<h3>{{ include.titel }}</h3>{% endif %}
+<div class="polis" data-conversation_id="{{ include.id }}" data-ui_lang="{{ include.taal | default: 'en' }}"></div>
+{% unless polis_script_geladen %}<script async src="https://pol.is/embed.js"></script>{% assign polis_script_geladen = true %}{% endunless %}
