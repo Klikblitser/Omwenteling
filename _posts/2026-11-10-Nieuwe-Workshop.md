@@ -1,22 +1,20 @@
 ---
 layout: post
-title: "Nieuwe workshop"
+title: "Nieuwe cursus"
 date: 2026-11-10
 thumbnail: /assets/images/actiefburgerschap.jpg	
 ---
 
-# Samen staan we sterk (als een huis)
+# Volksuniversiteit IJmond
 
-We hebben de afgelopen maanden niet stil gezeten. Zo waren er twee presentaties en afgelopen dinsdag een lezing. De Omwenteling heeft ook van zich laten horen bij een bijeenkomst van We Doen Het Samen-coalitie: Recht voor de Buurt! Na vandaag mogen we ook zeggen dat we als partner zijn aangesloten bij het [Huis van Actief Burgerschap](https://huisvanactiefburgerschap.nl/lokalehuizen/) en zijn daarmee formeel dan ook een 'Huis'.
+In samenwerking met de Volksuniversiteit IJmond gaan we een nieuw curriculum Actief Burgerschap opzetten binnen de zogenaamde 'pilaar' van Mens & Maatschappij. Zoals de naam al doet vermoeden ligt de nadruk op initiatief, verantwoordelijkheid en vooral veel doen!
 
-## Stadmakers en Huis van Actief Burgerschap
+## Actief Burgerschap
 
-Nadat Floor Ziegler en Teun Gautier door heel Nederland waren gelopen en onderweg met heel veel mensen het gesprek aan gingen over de gemeenschap waren zij zou geïnspireerd geraakt dat ze de Stadmakers hebben opgericht als manier om zo een duurzaam netwerk op te bouwen. In Utrecht werd het eerste Huis van Actief Burgerschap opgezet en dit idee is als een olievlek gaan verspreiden. Er zijn inmiddels meer dan 35 lokale Huizen in heel Nederland.
+Hoe werkt de gemeente? Wanneer mag je inspreken, wat is het uitdaagrecht en wat kun je doen als je bezwaar hebt tegen beleid of afspraken niet worden nagekomen? Het doel is dat inwoners niet alleen leren hoe de democratie werkt, maar ook concreet weten wat zij zelf kunnen doen.
 
-## Inspreken bij de gemeente Velsen
+## [Kwartier- en Stadmakers van Velsen](https://omwenteling.com/nieuws/2026/10/14/Samen-staan-we-sterk/)
 
-Eind november komt de 'Visie van wijkvertegenwoordiging naar inwonersbetrokkenheid' voor stemming in de gemeenteraad. De Omwenteling is van plan om ook dan weer van zich te laten horen, over wat ónze visie is op het [samenspel](https://www.samenspelvelsen.nl/) met de gemeente Velsen. Daarin willen wij wel graag zoveel mogelijk betrokken, maar ook verlegen of meer afzijdige inwoners vertegenwoordigen want; iedereen telt mee!
-
-Blijf ons volgen via de website, ga met ons in gesprek en deel onze berichten om het initiatief zichtbaar te maken.
+Voor de connectie met de praktijk in Velsen willen we graag vrijwilligers, actieve inwoners en eigenwijze Velsenaren betrekken bij de leergang. Iedereen die zich herkend in deze beschrijving, of al kwartier- of Stadmaker is, is van harte welkom!
 
 **Indien men ons en andere aangeloten inwoners in gesprek wil kan dat [hier](https://signal.group/#CjQKIFAEulSj-Gr2xEi_qXG-qk6NKbBL5hIRIarE7AoksKITEhBSjWzntnkDXcDCFyg_DDpK)**
