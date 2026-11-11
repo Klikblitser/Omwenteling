@@ -27,7 +27,7 @@ layout: default
 </div>
 {% endif %}
 
-## Participatieverordening
+### **Participatieverordening**
 
 De gemeente Velsen moet haar participatieverordening actualiseren (vernieuwen) voor 1 januari 2027. Zij is dit verplicht. Eind november komt het voorstel "Visie van Wijkvertegenwoordiging naar Inwonerbetrokkenheid" voor stemming in de gemeenteraad en is er de mogelijkheid om in te spreken. **Als wij als inwoners zeggenschap willen over hoe deze samenwerking eruit komt te zien, móeten wij van ons laten horen!**
 
@@ -45,7 +45,7 @@ Met een kan-bepaling krijgt de raad de bevoegdheid, maar niet de plicht, om op g
 
 ### Hoe krijgen inwoners zeggenschap over hun omgeving?
 
-Dat klinkt misschien utopisch maar we geloven dat het mogelijk is door macht te spreiden. Daarvoor moeten we het algemeen handelingsvermogen vergroten en de gemeenschap verheffen. Als de inwoner in het systeem vastloopt kan je nog zoveel workshops, juridische bijstand en cursussen burgerschap bieden; dit repareerd geen kapot systeem. Daarom willen we ook het handelingsperspectief verbeteren door zeggenschap en invloed op een transparante en eerlijke manier te institutionaliseren. Voor dit doel is het burgerberaad als een mes dat aan twee zijden snijd.
+Dat klinkt misschien utopisch maar we geloven dat het mogelijk is door macht te spreiden. Daarvoor moeten we het algemeen **handelingsvermogen** vergroten oftewel de (lokale) samenleving verheffen. Als de inwoner in het systeem vastloopt kan je nog zoveel workshops, juridische bijstand en cursussen burgerschap bieden; dit repareerd geen kapot systeem. Daarom willen we ook het **handelingsperspectief** verbeteren door zeggenschap en invloed op een transparante en eerlijke manier te institutionaliseren. Voor dit doel is het burgerberaad als een mes dat aan twee zijden snijd.
 
 ## Wat is een burgerberaad?
 
