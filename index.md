@@ -29,7 +29,7 @@ layout: default
 
 ## Participatieverordening
 
-De gemeente Velsen heeft nog geen participatieverordening vastgesteld. Zij is verplicht om dit te doen voor 1 januari 2027. Eind november komt het voor stemming in de gemeenteraad en is er de mogelijkheid om in te spreken. **Als wij als inwoners zeggenschap willen over hoe deze samenwerking eruit komt te zien, móeten wij van ons laten horen!**
+De gemeente Velsen moet haar participatieverordening actualiseren (vernieuwen) voor 1 januari 2027. Zij is dit verplicht. Eind november komt het voorstel "Visie van Wijkvertegenwoordiging naar Inwonerbetrokkenheid" voor stemming in de gemeenteraad en is er de mogelijkheid om in te spreken. **Als wij als inwoners zeggenschap willen over hoe deze samenwerking eruit komt te zien, móeten wij van ons laten horen!**
 
 #### Maatschappelijk vastgoed
 
